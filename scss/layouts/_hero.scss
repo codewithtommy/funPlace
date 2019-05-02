@@ -1,0 +1,24 @@
+.hero {
+  background: url(/images/homeHeader.jpg)no-repeat fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+.hero .wrapper {
+  margin: 0%;
+}
+
+.heroLeft,
+.heroRight img {
+  width: 50%;
+}
+
+.heroLeft {
+  border: $border;
+  font-family: $sec;
+  font-size: 2rem;
+}
+
+.heroRight {
+
+}

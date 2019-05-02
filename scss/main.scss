@@ -34,7 +34,7 @@
 // PAGES (Index/ Home, Contact, Blog)
 // -----------------------------------
 
-@import "./pages/index";
+@import "./pages/home";
 @import "./pages/contact";
 @import "./pages/blog";
 
@@ -43,6 +43,7 @@
 // -----------------------------------
 
 html {
+  color: $white;
   font-family: $prim;
   font-size: 125%;
 }
@@ -50,5 +51,6 @@ html {
 .wrapper {
   display: block;
   max-width: 100%;
+  padding: 0% 10%;
   width: 100%;
 }

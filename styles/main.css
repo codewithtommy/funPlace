@@ -181,7 +181,55 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   overflow: hidden;
 }
 
+.topNavi {
+  border: 1px solid orangered;
+  padding-top: 7.5%;
+  width: 50%;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0%;
+  padding: 0%;
+}
+
+ul li {
+  margin: 0% 5.5%;
+}
+
+ul li a {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.hero {
+  background: url(/images/homeHeader.jpg) no-repeat fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+.hero .wrapper {
+  margin: 0%;
+}
+
+.heroLeft,
+.heroRight img {
+  width: 50%;
+}
+
+.heroLeft {
+  border: 1px solid orangered;
+  font-family: "Walter Turncoat", cursive;
+  font-size: 2rem;
+}
+
 html {
+  color: #FFFFFF;
   font-family: "Roboto", sans-serif;
   font-size: 125%;
 }
@@ -189,6 +237,7 @@ html {
 .wrapper {
   display: block;
   max-width: 100%;
+  padding: 0% 10%;
   width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
