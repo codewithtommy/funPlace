@@ -37,3 +37,18 @@
 @import "./pages/index";
 @import "./pages/contact";
 @import "./pages/blog";
+
+// -----------------------------------
+// GENERAL Styles
+// -----------------------------------
+
+html {
+  font-family: $prim;
+  font-size: 125%;
+}
+
+.wrapper {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}

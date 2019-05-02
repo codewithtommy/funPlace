@@ -180,4 +180,15 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   clip: rect(0 0 0);
   overflow: hidden;
 }
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 125%;
+}
+
+.wrapper {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
 /*# sourceMappingURL=main.css.map */
