@@ -182,9 +182,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .topNavi {
-  border: 1px solid orangered;
-  padding-top: 7.5%;
-  width: 50%;
+  padding-top: 4.5%;
+  margin-left: 5%;
 }
 
 ul {
@@ -197,35 +196,56 @@ ul {
 }
 
 ul li {
-  margin: 0% 5.5%;
+  margin: 0% 2.5%;
 }
 
 ul li a {
   color: #FFFFFF;
-  font-size: 1rem;
+  font-size: 0.78rem;
   font-weight: 700;
   text-decoration: none;
 }
 
 .hero {
-  background: url(/images/homeHeader.jpg) no-repeat fixed;
+  background: url(/images/homeHeader.jpg) no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 80vh;
 }
 
 .hero .wrapper {
   margin: 0%;
+  padding: 0%;
+}
+
+.heroContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .heroLeft,
-.heroRight img {
+.heroRight {
   width: 50%;
 }
 
 .heroLeft {
-  border: 1px solid orangered;
   font-family: "Walter Turncoat", cursive;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  padding: 12.5% 0%;
+}
+
+.heroLeft h1 {
+  text-align: right;
+  padding-right: 5%;
+}
+
+.heroRight {
+  position: relative;
+}
+
+.heroRight img {
+  position: relative;
+  top: 18%;
 }
 
 html {
@@ -237,7 +257,13 @@ html {
 .wrapper {
   display: block;
   max-width: 100%;
-  padding: 0% 10%;
+  padding: 0% 5%;
+  width: 100%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
   width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

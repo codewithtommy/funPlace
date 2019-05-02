@@ -1,7 +1,7 @@
 .topNavi {
-  border: $border;
-  padding-top: 7.5%;
-  width: 50%;
+  // border: $border;
+  padding-top: 4.5%;
+  margin-left: 5%;
 }
 
 ul {
@@ -12,12 +12,12 @@ ul {
 }
 
 ul li {
-  margin: 0% 5.5%;
+  margin: 0% 2.5%;
 }
 
 ul li a {
   color: $white;
-  font-size: 1rem;
+  font-size: 0.78rem;
   font-weight: $bold;
   text-decoration: none;
 }
