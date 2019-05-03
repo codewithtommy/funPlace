@@ -255,18 +255,6 @@ ul li a {
   padding-bottom: 7.5%;
 }
 
-.aboutLeft,
-.aboutRight {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 50%;
-}
-
 .aboutContent {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -288,7 +276,6 @@ ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 1.2rem;
   height: 50px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -301,16 +288,40 @@ ul li a {
   width: 90%;
 }
 
-.aboutText h2 {
-  font-family: "Walter Turncoat", cursive;
-  font-size: 1.7rem;
-  font-weight: 700;
-  margin: 0%;
-}
-
 .aboutText p {
   font-size: .9rem;
   margin: 2.5% 0%;
+}
+
+.information {
+  border: 1px solid orangered;
+  background: #474BB5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.infoLeft {
+  padding-right: 7.5%;
+}
+
+.infoRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  padding-left: 7.5%;
+}
+
+.infoText {
+  padding-bottom: 15%;
+}
+
+.infoLeft p {
+  text-align: right;
 }
 
 html {
@@ -333,6 +344,13 @@ img {
 }
 
 i {
-  font-size: 1.75rem;
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-family: "Walter Turncoat", cursive;
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin: 0%;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,24 @@
+.information {
+  border: $border;
+  background: $frchblue;
+  display: flex;
+}
+
+.infoLeft {
+  padding-right: 7.5%;
+}
+
+.infoRight {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-left: 7.5%;
+}
+
+.infoText {
+  padding-bottom: 15%;
+}
+
+.infoLeft  p {
+  text-align: right;
+}
+
