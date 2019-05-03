@@ -229,7 +229,6 @@ ul li a {
 }
 
 .heroLeft {
-  font-family: "Walter Turncoat", cursive;
   font-size: 2.75rem;
   padding: 11% 0% 0% 7.5%;
 }
@@ -321,10 +320,6 @@ ul li a {
   text-align: right;
 }
 
-.infoTextLeft p {
-  margin: 2.5% 0% 5% 0%;
-}
-
 .infoRight {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -353,6 +348,31 @@ ul li a {
   padding-bottom: 10%;
 }
 
+.infoTextLeft p,
+.infoTextRight p {
+  margin: 2.5% 0% 5% 0%;
+}
+
+.infoTextRight p {
+  padding-right: 20%;
+}
+
+.roadTrip {
+  background: #03697C;
+}
+
+.roadTrip .wrapper {
+  padding: 10% 0%;
+}
+
+.roadTripText {
+  text-align: center;
+}
+
+.roadTripText p {
+  padding: 0% 10%;
+}
+
 html {
   color: #FFFFFF;
   font-family: "Roboto", sans-serif;
@@ -374,6 +394,10 @@ img {
 
 i {
   font-size: 1.2rem;
+}
+
+h1 {
+  font-family: "Walter Turncoat", cursive;
 }
 
 h2 {

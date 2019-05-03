@@ -1,12 +1,18 @@
 .about {
   background: $darkturq;
-}
 
-.about .wrapper {
+  .wrapper {
   display: flex;
   padding-top: 21%;
   padding-bottom: 7.5%;
+  }
 }
+
+// .about .wrapper {
+//   display: flex;
+//   padding-top: 21%;
+//   padding-bottom: 7.5%;
+// }
 
 // .aboutLeft,
 // .aboutRight {
