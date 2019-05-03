@@ -245,6 +245,7 @@ ul li a {
 .getInContact {
   border: 1px solid orangered;
   background: #03697C;
+  padding-top: 7.5%;
 }
 
 .contactContent {
@@ -254,9 +255,23 @@ ul li a {
   display: flex;
 }
 
+.contactLeft {
+  width: 30%;
+}
+
+.contactIcons i {
+  margin-right: 3.5%;
+}
+
+.contactText p {
+  line-height: 25px;
+  margin: 0%;
+}
+
 .contactRight {
   border: 1px solid orangered;
   background: #474BB5;
+  width: 70%;
 }
 
 .copyRight {
