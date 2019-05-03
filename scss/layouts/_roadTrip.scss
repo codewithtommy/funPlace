@@ -2,7 +2,7 @@
   background: $darkturq;
 
   .wrapper {
-    padding: 10% 0%;
+    padding: 10% 7.5%;
   }
 }
 
@@ -13,3 +13,11 @@
     padding: 0% 10%;
   }
 }
+
+// NOTE: Option 2: Set a background image on .roadTripImage. It has a cool effect on scroll if applied.
+
+// .roadTripImage {
+//   background: url(/images/banner.jpg)no-repeat center fixed;
+//   background-size: contain;
+//   height: 50vh;
+// }

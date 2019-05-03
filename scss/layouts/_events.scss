@@ -1,0 +1,22 @@
+.events {
+  background: $darkturq;
+  padding: 7.5% 0%;
+
+  .eventsContent {
+    display: flex;
+  }
+}
+
+.eventsImage {
+  width: 30%;
+
+  img {
+    box-shadow: -15px 15px $aqua;
+  }
+}
+
+.eventsText {
+  margin-left: 7.5%;
+  width: 70%;
+}
+

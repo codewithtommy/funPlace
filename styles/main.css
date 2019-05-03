@@ -337,9 +337,8 @@ ul li a {
 }
 
 .infoImageRight img {
-  -webkit-box-shadow: -15px 15px;
-          box-shadow: -15px 15px;
-  color: #08FDED;
+  -webkit-box-shadow: -15px 15px #08FDED;
+          box-shadow: -15px 15px #08FDED;
 }
 
 .infoTextLeft,
@@ -362,7 +361,7 @@ ul li a {
 }
 
 .roadTrip .wrapper {
-  padding: 10% 0%;
+  padding: 10% 7.5%;
 }
 
 .roadTripText {
@@ -371,6 +370,31 @@ ul li a {
 
 .roadTripText p {
   padding: 0% 10%;
+}
+
+.events {
+  background: #03697C;
+  padding: 7.5% 0%;
+}
+
+.events .eventsContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.eventsImage {
+  width: 30%;
+}
+
+.eventsImage img {
+  -webkit-box-shadow: -15px 15px #08FDED;
+          box-shadow: -15px 15px #08FDED;
+}
+
+.eventsText {
+  margin-left: 7.5%;
+  width: 70%;
 }
 
 html {
