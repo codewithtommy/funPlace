@@ -1,0 +1,54 @@
+.about {
+  background: $darkturq;
+}
+
+.about .wrapper {
+  display: flex;
+  padding-top: 21%;
+  padding-bottom: 7.5%;
+}
+
+.aboutLeft,
+.aboutRight {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.aboutContent {
+  display: flex;
+  padding-bottom: 5%;
+}
+
+.aboutIcons {
+  width: 10%;
+}
+
+.aboutIcons i {
+  align-items: center;
+  background: $aqua;
+  border-radius: 25px;
+  color: $frchblue;
+  display: flex;
+  font-size: 1.2rem;
+  height: 50px;
+  justify-content: center;
+  width: 100%;
+}
+
+.aboutText {
+  padding-left: 2.5%;
+  width: 90%;
+}
+
+.aboutText h2 {
+  font-family: $sec;
+  font-size: 1.7rem;
+  font-weight: $bold;
+  margin: 0%;
+}
+
+.aboutText p {
+  font-size: .9rem;
+  margin: 2.5% 0%;
+}

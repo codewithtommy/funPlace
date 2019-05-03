@@ -230,13 +230,8 @@ ul li a {
 
 .heroLeft {
   font-family: "Walter Turncoat", cursive;
-  font-size: 2.5rem;
-  padding: 12.5% 0%;
-}
-
-.heroLeft h1 {
-  text-align: right;
-  padding-right: 5%;
+  font-size: 2.75rem;
+  padding: 11% 0% 0% 7.5%;
 }
 
 .heroRight {
@@ -248,6 +243,76 @@ ul li a {
   top: 18%;
 }
 
+.about {
+  background: #03697C;
+}
+
+.about .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 21%;
+  padding-bottom: 7.5%;
+}
+
+.aboutLeft,
+.aboutRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
+.aboutContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 5%;
+}
+
+.aboutIcons {
+  width: 10%;
+}
+
+.aboutIcons i {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #08FDED;
+  border-radius: 25px;
+  color: #474BB5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.2rem;
+  height: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.aboutText {
+  padding-left: 2.5%;
+  width: 90%;
+}
+
+.aboutText h2 {
+  font-family: "Walter Turncoat", cursive;
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin: 0%;
+}
+
+.aboutText p {
+  font-size: .9rem;
+  margin: 2.5% 0%;
+}
+
 html {
   color: #FFFFFF;
   font-family: "Roboto", sans-serif;
@@ -257,7 +322,7 @@ html {
 .wrapper {
   display: block;
   max-width: 100%;
-  padding: 0% 5%;
+  padding: 0% 7.5%;
   width: 100%;
 }
 
@@ -265,5 +330,9 @@ img {
   display: block;
   max-width: 100%;
   width: 100%;
+}
+
+i {
+  font-size: 1.75rem;
 }
 /*# sourceMappingURL=main.css.map */
