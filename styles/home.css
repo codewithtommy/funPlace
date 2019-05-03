@@ -23,6 +23,7 @@ i {
 
 h1 {
   font-family: "Walter Turncoat", cursive;
+  font-size: 5.5rem;
 }
 
 h2 {
@@ -65,10 +66,6 @@ a:focus {
 
 a:active, a:hover {
   outline: 0;
-}
-
-h1 {
-  font-size: 2em;
 }
 
 abbr[title] {
@@ -257,7 +254,6 @@ ul li a {
 }
 
 .heroLeft {
-  font-size: 2.75rem;
   padding: 11% 0% 0% 7.5%;
 }
 
