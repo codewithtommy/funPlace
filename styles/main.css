@@ -397,6 +397,17 @@ ul li a {
   width: 70%;
 }
 
+.gallery {
+  background: #474BB5;
+  padding: 7.5% 0%;
+}
+
+.gallery .galleryContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 html {
   color: #FFFFFF;
   font-family: "Roboto", sans-serif;
