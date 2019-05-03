@@ -1,8 +1,3 @@
-// -----------------------------------
-// GENERAL
-// -----------------------------------
-
-$border: 1px solid orangered;
 
 // -----------------------------------
 // COLOR
@@ -35,6 +30,48 @@ $normal: 400;
 $semiBold: 500;
 $bold: 700;
 
+// -----------------------------------
+// GENERAL
+// -----------------------------------
 
+$border: 1px solid orangered;
+
+html {
+  color: $white;
+  font-family: $prim;
+  font-size: 125%;
+}
+
+.wrapper {
+  display: block;
+  max-width: 100%;
+  padding: 0% 7.5%;
+  width: 100%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
+
+i {
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-family: $sec;
+}
+
+h2 {
+  font-family: $sec;
+  font-size: 1.7rem;
+  font-weight: $bold;
+  margin: 0%;
+}
+
+p {
+  font-size: .9rem;
+}
 
 
