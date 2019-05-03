@@ -1,0 +1,48 @@
+.contactContent {
+  position: relative;
+}
+.contactRight {
+  background: $frchblue;
+  padding: 5% 3.5% 3.5%;
+  position: relative;
+  right: -25px;
+  top: -250px;
+  width: 65%;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0%;
+  // padding: 7.5% 5% 5% 5%;
+}
+
+input[type="fullName"],
+input[type="emailAddress"] {
+  background: none;
+  border: none;
+  border-bottom: 1px solid $white;
+  color: $white;
+  padding: 2.5%;
+  width: 48%;
+}
+
+input[type="message"] {
+  background: $frchblue;
+  border: 1px solid $white;
+  color: $white;
+  margin-bottom: 2.5%;
+  padding: 2.5% 0% 30% 1.5%;
+  width: 100%;
+}
+
+input[type="submit"] {
+  background: $aqua;
+  border: transparent;
+  color: $darkturq;
+  font-family: $sec;
+  font-weight: $bold;
+  padding: 1.5%;
+  width: 100%;
+}

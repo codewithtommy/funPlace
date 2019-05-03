@@ -57,7 +57,18 @@
           </div>
           <div class="contactRight">
             <form action="comments.php" method="POST" name="commentForm">
-              <label for="name">Name</label>
+              <fieldset>
+                <label for="fullName" class="visuallyHidden">Name</label>
+                <input type="fullName" name="fullName" placeholder="Name" id="userName">
+                <label for="emailAddress" class="visuallyHidden">Email Address</label>
+                <input type="emailAddress" name="emailAddress" placeholder="Email Address" id="userEmail">
+              </fieldset>
+              <fieldset>
+                <input type="message" name="message" placeholder="Message" id="userMessage">
+              </fieldset>
+              <fieldset>
+                <input type="submit" value="Submit">
+              </fieldset>
             </form>
           </div>
         </div>

@@ -236,6 +236,59 @@ ul li a {
   text-decoration: none;
 }
 
+.contactContent {
+  position: relative;
+}
+
+.contactRight {
+  background: #474BB5;
+  padding: 5% 3.5% 3.5%;
+  position: relative;
+  right: -25px;
+  top: -250px;
+  width: 65%;
+}
+
+fieldset {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0%;
+}
+
+input[type="fullName"],
+input[type="emailAddress"] {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  padding: 2.5%;
+  width: 48%;
+}
+
+input[type="message"] {
+  background: #474BB5;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  margin-bottom: 2.5%;
+  padding: 2.5% 0% 30% 1.5%;
+  width: 100%;
+}
+
+input[type="submit"] {
+  background: #08FDED;
+  border: transparent;
+  color: #03697C;
+  font-family: "Walter Turncoat", cursive;
+  font-weight: 700;
+  padding: 1.5%;
+  width: 100%;
+}
+
 .heroContact {
   background: url(/images/contactHeader.jpg) no-repeat;
   background-size: cover;
@@ -243,20 +296,18 @@ ul li a {
 }
 
 .getInContact {
-  border: 1px solid orangered;
   background: #03697C;
   padding-top: 7.5%;
 }
 
 .contactContent {
-  border: 1px solid orangered;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .contactLeft {
-  width: 30%;
+  width: 35%;
 }
 
 .contactIcons i {
@@ -266,12 +317,6 @@ ul li a {
 .contactText p {
   line-height: 25px;
   margin: 0%;
-}
-
-.contactRight {
-  border: 1px solid orangered;
-  background: #474BB5;
-  width: 70%;
 }
 
 .copyRight {

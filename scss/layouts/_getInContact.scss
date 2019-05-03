@@ -1,16 +1,14 @@
 .getInContact {
-  border: $border;
   background: $darkturq;
   padding-top: 7.5%;
 }
 
 .contactContent {
-  border: $border;
   display: flex;
 }
 
 .contactLeft {
-  width: 30%;
+  width: 35%;
 }
 
 .contactIcons i {
@@ -20,10 +18,4 @@
 .contactText p {
   line-height: 25px;
   margin: 0%;
-}
-
-.contactRight {
-  border: $border;
-  background: $frchblue;
-  width: 70%;
 }
