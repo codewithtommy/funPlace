@@ -243,6 +243,8 @@ ul li a {
 .contactRight {
   background: #474BB5;
   padding: 5% 3.5% 3.5%;
+  -webkit-box-shadow: 15px 15px #08FDED;
+          box-shadow: 15px 15px #08FDED;
   position: relative;
   right: -25px;
   top: -250px;
