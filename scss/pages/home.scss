@@ -2,29 +2,30 @@
 // ABSTRACTS (Mixins)
 // -----------------------------------
 
-@import "./abstracts/mixins";
+@import "../abstracts/mixins";
 
 // -----------------------------------
 // BASE (Setup, Typography...)
 // -----------------------------------
 
-@import "./base/global";
-@import "./base/setup";
+@import "../base/global";
+@import "../base/setup";
 
 // -----------------------------------
-// COMPONENTS (Overlay, Navigations)
+// COMPONENTS (Overlay, Navigation)
 // -----------------------------------
 
-@import "./components/navigation";
-@import "./components/form";
+@import "../components/navigation";
 
 // -----------------------------------
 // LAYOUTS (Hero, About, Information,
 // Roadtrip, Events, Gallery, Copyright)
 // -----------------------------------
 
-@import "./layouts/heroContact";
-@import "./layouts/getInContact";
-@import "./layouts/copyRight";
-
-// -----------------------------------
+@import "../layouts/hero";
+@import "../layouts/about";
+@import "../layouts/information";
+@import "../layouts/roadTrip";
+@import "../layouts/events";
+@import "../layouts/gallery";
+@import "../layouts/copyRight";

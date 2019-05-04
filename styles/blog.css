@@ -291,34 +291,10 @@ input[type="submit"] {
   width: 100%;
 }
 
-.heroContact {
-  background: url(../images/contactHeader.jpg) no-repeat;
+.heroBlog {
+  background: url(../images/blogHeaderjpg.jpg) no-repeat;
   background-size: cover;
   height: 80vh;
-}
-
-.getInContact {
-  background: #03697C;
-  padding-top: 7.5%;
-}
-
-.contactContent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.contactLeft {
-  width: 35%;
-}
-
-.contactIcons i {
-  margin-right: 3.5%;
-}
-
-.contactText p {
-  line-height: 25px;
-  margin: 0%;
 }
 
 .copyRight {
@@ -330,4 +306,4 @@ input[type="submit"] {
   margin: 0%;
   padding: 0.5% 0%;
 }
-/*# sourceMappingURL=contact.css.map */
+/*# sourceMappingURL=blog.css.map */
