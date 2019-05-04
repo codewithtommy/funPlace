@@ -1,0 +1,27 @@
+.hero {
+  background: url(../images/homeHeader.jpg)no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+
+.heroContainer {
+  display: flex;
+}
+
+.heroLeft,
+.heroRight{
+  width: 50%;
+}
+
+.heroLeft {
+  padding: 11% 0% 0% 7.5%;
+}
+
+.heroRight {
+  position: relative;
+}
+
+.heroRight img {
+  position: relative;
+  top: 18%;
+}
