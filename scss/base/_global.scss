@@ -56,27 +56,24 @@ img {
 }
 
 i {
-  font-size: 1.2rem;
+  @include fontProp (null, 1.2rem, null);
 }
 
 h1 {
-  font-family: $sec;
-  font-size: 5.5rem;
+  @include fontProp ($sec, 5.5rem, null);
 }
 
 h2 {
-  font-family: $sec;
-  font-size: 1.7rem;
-  font-weight: $bold;
+  @include fontProp ($sec, 1.7rem, $bold);
   margin: 0%;
 }
 
 h3 {
-  font-family: $sec;
+  @include fontProp ($sec, null, null);
 }
 
 p {
-  font-size: .9rem;
+  @include fontProp (null, .9rem, null);
 }
 
 
