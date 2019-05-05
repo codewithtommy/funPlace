@@ -89,35 +89,50 @@
   <!-- ----------------------------------------------------------------------------------------------------- -->
   <!-- SECTION: COMMENTS | START (Comment TOP + BOTTOM) -->
   <section class="comments">
-    <div class="commentTitle">
+    <div class="commentsContent">
       <h2>Comments</h2>
-    </div>
-    <!-- NOTE: MARIAMA'S COMMENT -->
-    <div class="commentContent">
-      <div class="blogText">
-        <img src="" alt="Mariama's Profile">
-        <h4>Tuesday, October 9th 2019 by Mariama</h4>
-        <p>Fusce vehicle dolor arc, sit amen blanket dolor mollie nec.
-        Donec viverra eleifend locus, vitae ullamcorper mets. Sed
-        Sollicitudin ipsum quis nunc sollicitude ultrices. Donec euismod
-        Scelerisque liqula. Maecenas eu varius risus…</p>
+      <!-- USER: MARIAMA'S COMMENT -->
+      <div class="commentUser">
+        <div class="userContainer">
+          <img src="./images/commentOne.jpg" alt="Mariama's Profile">
+        </div>
+        <div class="blogText">
+          <h4>Tuesday, October 9th 2019 by Mariama</h4>
+          <p>Fusce vehicle dolor arc, sit amen blanket dolor mollie nec.
+          Donec viverra eleifend locus, vitae ullamcorper mets. Sed
+          Sollicitudin ipsum quis nunc sollicitude ultrices. Donec euismod
+          Scelerisque liqula. Maecenas eu varius risus…</p>
+        </div>
       </div>
-    </div>
-    <!-- NOTE: ROB's COMMENT-->
-    <div class="commentContent">
-      <div class="blogText">
-        <img src="" alt="Rob's Profile">
-        <h4>Wednesday, October 10th 2019 by Rob</h4>
-        <p>Donner viverra eleifend Lachs, vitae ullamcorper Mets. Sed
-        Sollicitudin ipsum quis nunc sollicitundin ultrices. Donec euismod
-        scelerisque ligua.</p>
+      <!-- USER: ROB's COMMENT-->
+      <div class="commentUser">
+        <div class="userContainer">
+          <img src="./images/commentTwo.jpg" alt="Rob's Profile">
+        </div>
+        <div class="blogText">
+          <h4>Wednesday, October 10th 2019 by Rob</h4>
+          <p>Donner viverra eleifend Lachs, vitae ullamcorper Mets. Sed
+          Sollicitudin ipsum quis nunc sollicitundin ultrices. Donec euismod
+          scelerisque ligua.</p>
+        </div>
       </div>
-    </div>
-    <!-- NOTE: COMMENT FORM -->
-    <div class="commentForm">
-      <form action="">
-        
-      </form>
+      <!-- NOTE: COMMENT FORM -->
+      <div class="commentForm">
+        <form action="comments.php" method="POST" name="commentForm">
+          <fieldset>
+            <label for="fullName" class="visuallyHidden">Name</label>
+            <input type="fullName" name="fullName" placeholder="Name">
+            <label for="emailAddress" class="visuallyHidden">Email Address</label>
+            <input type="emailAddress" name="emailAddress" placeholder="Email Address" id="userEmail">
+          </fieldset>
+          <fieldset>
+            <input type="message" name="message" placeholder="Comment">
+          </fieldset>
+          <fieldset>
+            <input type="submit" value="Post Comment">
+          </fieldset>
+        </form>
+      </div>
     </div>
   </section>
   <!-- SECTION: COMMENTS | END -->

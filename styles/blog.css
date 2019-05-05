@@ -354,23 +354,85 @@ input[type="submit"] {
 .blogRight {
   border-left: 5px solid #08FDED;
   border-bottom: 5px solid #08FDED;
-  padding-right: 7.5%;
   width: 70%;
 }
 
 .blogRight .blogImageRight {
-  margin: -20% -14.5% 0% 1.5%;
+  margin: -17% 0% 0% 1.25%;
   -webkit-box-shadow: -15px 15px aqua;
           box-shadow: -15px 15px aqua;
 }
 
 .blogRight .blogText {
-  padding: 2.5% 4.5% 5% 7%;
-  position: absolute;
+  padding: 2.5% 6% 5% 12%;
 }
 
 .blogRight .blogText p {
   line-height: 20px;
+}
+
+.blogRight .blogText p:last-child {
+  margin-bottom: 10%;
+}
+
+.comments {
+  background: #03697C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.comments .commentsContent {
+  padding: 0% 2% 0% 7.5%;
+  width: 59.5%;
+}
+
+.commentUser {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 20px;
+  margin-bottom: 10%;
+}
+
+.commentUser .userContainer {
+  width: 12.5%;
+}
+
+.commentUser .blogText {
+  padding-left: 5%;
+  width: 90%;
+}
+
+.commentUser .blogText h4 {
+  margin: 0%;
+}
+
+.commentUser .blogText p {
+  margin-top: 2.5%;
+}
+
+.commentForm {
+  padding-bottom: 10%;
+}
+
+.commentForm input[type="fullName"],
+.commentForm input[type="emailAddress"],
+.commentForm input[type="message"] {
+  border-color: #08FDED;
+}
+
+.commentForm input[type="message"] {
+  background: none;
+}
+
+.commentForm input[type="submit"] {
+  color: #474BB5;
+  font-weight: 100;
 }
 
 .copyRight {
