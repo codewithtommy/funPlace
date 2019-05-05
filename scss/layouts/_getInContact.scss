@@ -5,17 +5,18 @@
 
 .contactContent {
   display: flex;
+
+  .contactLeft {
+    width: 35%;
+  }
+
+  .contactIcons i {
+    margin-right: 3.5%;
+  }
+
+  .contactText p {
+    line-height: 25px;
+    margin: 0%;
+  }
 }
 
-.contactLeft {
-  width: 35%;
-}
-
-.contactIcons i {
-  margin-right: 3.5%;
-}
-
-.contactText p {
-  line-height: 25px;
-  margin: 0%;
-}
