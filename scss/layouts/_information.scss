@@ -5,37 +5,40 @@
 
 .infoLeft {
   padding-right: 7.5%;
-}
 
-.infoImageLeft {
+  .infoImageLeft {
   position: relative;
   top: -5%;
 
-  img {
-    box-shadow: 15px 15px;
-    color: $aqua;
+    img {
+      box-shadow: 15px 15px $aqua;
+    }
   }
-}
 
-.infoTextLeft h2,
-.infoTextLeft p,
-.infoTextLeft .buttonWrapper {
-  padding-left: 20%;
-  text-align: right;
+  .infoTextLeft h2,
+  .infoTextLeft p,
+  .infoTextLeft .buttonWrapper {
+    padding-left: 20%;
+    text-align: right;
+  }
 }
 
 .infoRight {
   display: flex;
   flex-direction: column-reverse;
   padding-left: 7.5%;
-}
 
-.infoImageRight {
+  .infoImageRight {
   position: relative;
   top: 5%;
 
-  img {
-    box-shadow: -15px 15px $aqua;
+    img {
+      box-shadow: -15px 15px $aqua;
+    }
+  }
+
+  .infoTextRight p {
+  padding-right: 20%;
   }
 }
 
@@ -49,8 +52,3 @@
 .infoTextRight p {
   margin: 2.5% 0% 5% 0%;
 }
-
-.infoTextRight p {
-  padding-right: 20%;
-}
-

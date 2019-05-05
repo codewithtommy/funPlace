@@ -3,6 +3,8 @@
 
   .wrapper {
   display: flex;
+  // NOTE: Unable to set PADDING code to one line...
+  // Padding: 21% 0% 7.5% 0% = layout collapses.
   padding-top: 21%;
   padding-bottom: 7.5%;
   }
