@@ -442,11 +442,11 @@ ul li a {
   display: flex;
 }
 
-.galleryImage.one {
+.gallery .galleryContent .galleryImage.one {
   margin-right: 3%;
 }
 
-.galleryImage.three {
+.gallery .galleryContent .galleryImage.three {
   margin-left: 3%;
 }
 
