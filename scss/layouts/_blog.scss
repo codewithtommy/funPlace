@@ -16,8 +16,7 @@
 .blogBoxLeft {
   padding: 10%;
 
-  .blogText h3 {
-    font-size: 0.78rem;
+  .blogText h4 {
     margin: 0%;
     text-transform: uppercase;
   }
@@ -59,10 +58,6 @@
       line-height: 20px;
     }
   }
-
-  .blogText p:last-child {
-    margin-bottom: 10%;
-  }
 }
 
 .comments {
@@ -73,6 +68,10 @@
   .commentsContent {
     padding: 0% 2% 0% 7.5%;
     width: 59.5%;
+
+    h3 {
+      margin: 2.5% 0%;
+    }
   }
 }
 
@@ -90,6 +89,8 @@
     width: 90%;
 
     h4 {
+      @include fontProp ($prim, .9rem, $bolder);
+      font-style: italic;
       margin: 0%;
     }
 

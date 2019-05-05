@@ -29,6 +29,7 @@ $light: 300;
 $normal: 400;
 $semiBold: 500;
 $bold: 700;
+$bolder: bolder;
 
 // -----------------------------------
 // GENERAL
@@ -38,8 +39,7 @@ $border: 1px solid orangered;
 
 html {
   color: $white;
-  font-family: $prim;
-  font-size: 125%;
+  @include fontProp ($prim, 125%, null);
 }
 
 .wrapper {
@@ -69,7 +69,12 @@ h2 {
 }
 
 h3 {
-  @include fontProp ($sec, null, null);
+  @include fontProp ($sec, 2.5rem, null);
+  margin: 0%;
+}
+
+h4 {
+  @include fontProp ($sec, 0.78rem, null);
 }
 
 p {

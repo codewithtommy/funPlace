@@ -35,6 +35,13 @@ h2 {
 
 h3 {
   font-family: "Walter Turncoat", cursive;
+  font-size: 2.5rem;
+  margin: 0%;
+}
+
+h4 {
+  font-family: "Walter Turncoat", cursive;
+  font-size: 0.78rem;
 }
 
 p {
@@ -322,8 +329,7 @@ input[type="submit"] {
   padding: 10%;
 }
 
-.blogBoxLeft .blogText h3 {
-  font-size: 0.78rem;
+.blogBoxLeft .blogText h4 {
   margin: 0%;
   text-transform: uppercase;
 }
@@ -371,10 +377,6 @@ input[type="submit"] {
   line-height: 20px;
 }
 
-.blogRight .blogText p:last-child {
-  margin-bottom: 10%;
-}
-
 .comments {
   background: #03697C;
   display: -webkit-box;
@@ -389,6 +391,10 @@ input[type="submit"] {
 .comments .commentsContent {
   padding: 0% 2% 0% 7.5%;
   width: 59.5%;
+}
+
+.comments .commentsContent h3 {
+  margin: 2.5% 0%;
 }
 
 .commentUser {
@@ -409,6 +415,10 @@ input[type="submit"] {
 }
 
 .commentUser .blogText h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  font-weight: bolder;
+  font-style: italic;
   margin: 0%;
 }
 
