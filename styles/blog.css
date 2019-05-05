@@ -314,12 +314,11 @@ input[type="submit"] {
   width: 30%;
 }
 
-.blogImageLeft {
+.blogLeft .blogImageLeft {
   margin: -5% 5.5% 0% -30%;
 }
 
 .blogBoxLeft {
-  line-height: 20px;
   padding: 10%;
 }
 
@@ -348,6 +347,7 @@ input[type="submit"] {
 
 .blogBoxLeft .blogText ul p {
   color: #FFFFFF;
+  line-height: 20px;
   margin: 0%;
 }
 
@@ -358,10 +358,19 @@ input[type="submit"] {
   width: 70%;
 }
 
-.blogImageRight {
+.blogRight .blogImageRight {
   margin: -20% -14.5% 0% 1.5%;
   -webkit-box-shadow: -15px 15px aqua;
           box-shadow: -15px 15px aqua;
+}
+
+.blogRight .blogText {
+  padding: 2.5% 4.5% 5% 7%;
+  position: absolute;
+}
+
+.blogRight .blogText p {
+  line-height: 20px;
 }
 
 .copyRight {

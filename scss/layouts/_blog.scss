@@ -7,14 +7,13 @@
   background: $frchblue;
   margin: 7.5% 7.5% 15%;
   width: 30%;
-}
-
-.blogImageLeft {
-  margin: -5% 5.5% 0% -30%;
+  
+    .blogImageLeft {
+    margin: -5% 5.5% 0% -30%;
+  }
 }
 
 .blogBoxLeft {
-  line-height: 20px;
   padding: 10%;
 
   .blogText h3 {
@@ -35,6 +34,7 @@
 
     p {
       color: $white;
+      line-height: 20px;
       margin: 0%;
     }
   }
@@ -45,9 +45,18 @@
   border-bottom: 5px solid $aqua;
   padding-right: 7.5%;
   width: 70%;
-}
 
-.blogImageRight {
-  margin: -20% -14.5% 0% 1.5%;
-  box-shadow: -15px 15px aqua;
+  .blogImageRight {
+    margin: -20% -14.5% 0% 1.5%;
+    box-shadow: -15px 15px aqua;
+  }
+
+  .blogText {
+    padding: 2.5% 4.5% 5% 7%;
+    position: absolute;
+
+    p {
+      line-height: 20px;
+    }
+  }
 }
