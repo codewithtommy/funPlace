@@ -11,28 +11,28 @@
 .aboutContent {
   display: flex;
   padding-bottom: 5%;
-}
 
-.aboutIcons {
-  width: 10%;
-}
+  .aboutIcons {
+    width: 10%;
 
-.aboutIcons i {
-  align-items: center;
-  background: $aqua;
-  border-radius: 25px;
-  color: $frchblue;
-  display: flex;
-  height: 50px;
-  justify-content: center;
-  width: 100%;
-}
+    i {
+      align-items: center;
+      background: $aqua;
+      border-radius: 25px;
+      color: $frchblue;
+      display: flex;
+      height: 50px;
+      justify-content: center;
+      width: 100%;
+    }
+  }
 
-.aboutText {
-  padding-left: 2.5%;
-  width: 90%;
-}
+  .aboutText {
+    padding-left: 2.5%;
+    width: 90%;
 
-.aboutText p {
-  margin: 2.5% 0%;
+    p {
+      margin: 2.5% 0%;
+    }
+  }
 }

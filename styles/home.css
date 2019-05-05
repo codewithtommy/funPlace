@@ -296,11 +296,11 @@ ul li a {
   padding-bottom: 5%;
 }
 
-.aboutIcons {
+.aboutContent .aboutIcons {
   width: 10%;
 }
 
-.aboutIcons i {
+.aboutContent .aboutIcons i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -317,12 +317,12 @@ ul li a {
   width: 100%;
 }
 
-.aboutText {
+.aboutContent .aboutText {
   padding-left: 2.5%;
   width: 90%;
 }
 
-.aboutText p {
+.aboutContent .aboutText p {
   margin: 2.5% 0%;
 }
 
