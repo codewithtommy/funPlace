@@ -319,15 +319,15 @@ input[type="submit"] {
   display: flex;
 }
 
-.contactLeft {
+.contactContent .contactLeft {
   width: 35%;
 }
 
-.contactIcons i {
+.contactContent .contactIcons i {
   margin-right: 3.5%;
 }
 
-.contactText p {
+.contactContent .contactText p {
   line-height: 25px;
   margin: 0%;
 }
