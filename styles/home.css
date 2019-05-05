@@ -417,16 +417,16 @@ ul li a {
   display: flex;
 }
 
-.eventsImage {
+.events .eventsImage {
   width: 30%;
 }
 
-.eventsImage img {
+.events .eventsImage img {
   -webkit-box-shadow: -15px 15px #08FDED;
           box-shadow: -15px 15px #08FDED;
 }
 
-.eventsText {
+.events .eventsText {
   margin-left: 7.5%;
   width: 70%;
 }

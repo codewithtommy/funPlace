@@ -5,18 +5,18 @@
   .eventsContent {
     display: flex;
   }
-}
 
-.eventsImage {
+  .eventsImage {
   width: 30%;
 
-  img {
-    box-shadow: -15px 15px $aqua;
+    img {
+      box-shadow: -15px 15px $aqua;
+    }
   }
-}
 
-.eventsText {
-  margin-left: 7.5%;
-  width: 70%;
+  .eventsText {
+    margin-left: 7.5%;
+    width: 70%;
+  }
 }
 
