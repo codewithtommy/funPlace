@@ -6,22 +6,22 @@
 
 .heroContainer {
   display: flex;
-}
 
-.heroLeft,
-.heroRight{
-  width: 50%;
-}
+  .heroLeft,
+  .heroRight{
+    width: 50%;
+  }
 
-.heroLeft {
-  padding: 11% 0% 0% 7.5%;
-}
+  .heroLeft {
+    padding: 11% 0% 0% 7.5%;
+  }
 
-.heroRight {
-  position: relative;
-}
+  .heroRight {
+    position: relative;
 
-.heroRight img {
-  position: relative;
-  top: 18%;
+    img {
+      position: relative;
+      top: 18%;
+    }
+  }
 }

@@ -259,20 +259,20 @@ ul li a {
   display: flex;
 }
 
-.heroLeft,
-.heroRight {
+.heroContainer .heroLeft,
+.heroContainer .heroRight {
   width: 50%;
 }
 
-.heroLeft {
+.heroContainer .heroLeft {
   padding: 11% 0% 0% 7.5%;
 }
 
-.heroRight {
+.heroContainer .heroRight {
   position: relative;
 }
 
-.heroRight img {
+.heroContainer .heroRight img {
   position: relative;
   top: 18%;
 }
