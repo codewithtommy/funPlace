@@ -38,3 +38,10 @@
     }
   }
 }
+
+@include laptop {
+    .about .wrapper {
+      padding-top: 20%;
+      padding-bottom: 20%;
+    }
+}
