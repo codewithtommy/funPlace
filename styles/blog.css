@@ -253,12 +253,14 @@ ul li a {
 
 .contactRight {
   background: #474BB5;
-  padding: 5% 3.5% 3.5%;
   -webkit-box-shadow: 15px 15px #08FDED;
           box-shadow: 15px 15px #08FDED;
-  position: relative;
-  right: -25px;
   top: -250px;
+  right: -25px;
+  bottom: 0px;
+  left: 0px;
+  padding: 5% 3.5% 3.5%;
+  position: relative;
   width: 65%;
 }
 
@@ -273,8 +275,8 @@ fieldset {
   margin: 0%;
 }
 
-input[type="fullName"],
-input[type="emailAddress"] {
+fieldset input[type="fullName"],
+fieldset input[type="emailAddress"] {
   background: none;
   border: none;
   border-bottom: 1px solid #FFFFFF;
@@ -283,7 +285,7 @@ input[type="emailAddress"] {
   width: 48%;
 }
 
-input[type="message"] {
+fieldset input[type="message"] {
   background: #474BB5;
   border: 1px solid #FFFFFF;
   color: #FFFFFF;
@@ -292,7 +294,7 @@ input[type="message"] {
   width: 100%;
 }
 
-input[type="submit"] {
+fieldset input[type="submit"] {
   background: #08FDED;
   border: transparent;
   color: #03697C;

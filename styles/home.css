@@ -305,8 +305,8 @@ ul li a {
       -ms-flex-align: center;
           align-items: center;
   background: #08FDED;
-  border-radius: 25px;
   color: #474BB5;
+  border-radius: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
