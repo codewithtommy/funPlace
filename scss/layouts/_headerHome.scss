@@ -82,3 +82,13 @@
       top: 38%;
     }
   }
+
+  // MEDIA: TABLET (MAX-WIDTH: 767px)
+
+  @include tablet {
+    
+    .heroContainer .heroLeft h1 {
+      font-size: 3rem;
+      top: 65%;
+    }
+  }

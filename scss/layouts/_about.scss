@@ -42,21 +42,35 @@
 // MEDIA: LAPTOP (MAX-WIDTH: 1215px)
 
 @include laptop {
-    .about .wrapper {
-      padding-top: 20%;
-      padding-bottom: 20%;
-    }
+  .about .wrapper {
+    padding-top: 20%;
+    padding-bottom: 20%;
+  }
 }
 
 // MEDIA: LAPTOP SMALL (MAX-WIDTH: 1024px)
 
 @include laptopSmall {
-    .about .wrapper {
-      padding-top: 15%;
-      padding-bottom: 10%;
-    }
+  .about .wrapper {
+    padding-top: 15%;
+    padding-bottom: 10%;
+  }
 
-    .aboutContent .aboutIcons {
-      width: 12%;
-    }
+  .aboutContent .aboutIcons {
+    width: 12%;
+  }
+}
+
+// MEDIA: TABLET (MAX-WIDTH: 767px)
+
+@include tablet {
+  .about .wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 7.5%;
+  }
+
+  .aboutContent .aboutIcons {
+    width: 8%;
+  }
 }

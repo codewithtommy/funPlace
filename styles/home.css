@@ -341,6 +341,13 @@ button a {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .heroContainer .heroLeft h1 {
+    font-size: 3rem;
+    top: 65%;
+  }
+}
+
 .about {
   background: #03697C;
 }
@@ -407,6 +414,22 @@ button a {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .about .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 7.5%;
+  }
+  .aboutContent .aboutIcons {
+    width: 8%;
+  }
+}
+
 .information {
   background: #474BB5;
   display: -webkit-box;
@@ -469,6 +492,15 @@ button a {
 .infoTextLeft p,
 .infoTextRight p {
   margin: 2.5% 0% 5% 0%;
+}
+
+@media only screen and (max-width: 767px) {
+  .infoLeft .infoTextLeft p {
+    padding-left: 5%;
+  }
+  .infoRight .infoTextRight p {
+    padding-right: 5%;
+  }
 }
 
 .roadTrip {

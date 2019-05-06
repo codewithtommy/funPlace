@@ -52,3 +52,13 @@
 .infoTextRight p {
   margin: 2.5% 0% 5% 0%;
 }
+
+@include tablet {
+  .infoLeft .infoTextLeft p {
+    padding-left: 5%;
+  }
+
+  .infoRight .infoTextRight p {
+    padding-right: 5%;
+  }
+}
