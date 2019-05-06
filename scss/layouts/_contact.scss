@@ -19,5 +19,32 @@
     line-height: 25px;
     margin: 0%;
   }
+
+  .contactText p:first-child {
+    margin: 5% 0%;
+  }
 }
 
+@include laptop {
+  .contactContent {
+    align-items: center;
+    flex-direction: column-reverse;
+
+    .contactLeft,
+    .contactRight {
+      margin-bottom: 10%;
+      width: 75%;
+    }
+
+    .contactLeft {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .contactRight {
+      position: static !important;
+    }
+  }
+}
