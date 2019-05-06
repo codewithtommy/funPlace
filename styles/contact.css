@@ -392,9 +392,10 @@ fieldset input[type="submit"] {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: space-evenly;
+            flex-direction: space-evenly;
     margin-bottom: 2.5%;
     width: 45%;
   }

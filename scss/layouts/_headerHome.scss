@@ -26,6 +26,9 @@
   }
 }
 
+// MEDIA: LAPTOP (MAX-WIDTH: 1215px)
+// NOTE: Breakpoint set @ 1215px to prevent layout collapse.
+
   @include laptop {
     .hero {
       height: 100vh;
@@ -66,9 +69,16 @@
     }
   }
 
+// MEDIA: LAPTOP SMALL (MAX-WIDTH: 1024px)
+
   @include laptopSmall {
-    
-    .heroLeft h1 {
+
+    .heroContainer .heroLeft h1 {
       font-size: 4.5rem;
+      top: 60%;
+    }
+
+    .heroContainer .heroRight img {
+      top: 38%;
     }
   }

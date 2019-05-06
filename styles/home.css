@@ -332,8 +332,12 @@ button a {
 }
 
 @media only screen and (max-width: 1024px) {
-  .heroLeft h1 {
+  .heroContainer .heroLeft h1 {
     font-size: 4.5rem;
+    top: 60%;
+  }
+  .heroContainer .heroRight img {
+    top: 38%;
   }
 }
 
@@ -390,6 +394,16 @@ button a {
   .about .wrapper {
     padding-top: 20%;
     padding-bottom: 20%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .about .wrapper {
+    padding-top: 15%;
+    padding-bottom: 10%;
+  }
+  .aboutContent .aboutIcons {
+    width: 12%;
   }
 }
 

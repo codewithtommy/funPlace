@@ -59,7 +59,7 @@
   left: $lef;
 }
 
-@mixin flexCent ($aliItems, $display, $flexdire, $textCent){
+@mixin flexCent ($aliItems, $display, $flexDire, $textCent){
   align-items: $aliItems;
   display: $display;
   flex-direction: $flexDire;
