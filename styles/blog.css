@@ -470,15 +470,14 @@ fieldset input[type="submit"] {
     width: 100%;
   }
   .blog .blogLeft .blogImageLeft {
+    margin: 0%;
+  }
+  .blog .blogLeft .blogImageLeft img {
     -webkit-box-shadow: -15px -15px #08FDED;
             box-shadow: -15px -15px #08FDED;
-    margin: 0%;
   }
   .blogBoxLeft {
     padding: 0% 7.5%;
-  }
-  .blogBoxLeft .blogText {
-    padding-right: 42%;
   }
   .blogBoxLeft .blogText h4 {
     font-size: 1.5rem;
