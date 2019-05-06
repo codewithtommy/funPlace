@@ -454,6 +454,65 @@ fieldset input[type="submit"] {
   font-weight: 100;
 }
 
+@media only screen and (max-width: 1215px) {
+  .blog {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog .blogLeft {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0%;
+    padding: 7.5% 7.5% 5% 7.5%;
+    width: 100%;
+  }
+  .blog .blogLeft .blogImageLeft {
+    -webkit-box-shadow: -15px -15px #08FDED;
+            box-shadow: -15px -15px #08FDED;
+    margin: 0%;
+  }
+  .blogBoxLeft {
+    padding: 0% 7.5%;
+  }
+  .blogBoxLeft .blogText {
+    padding-right: 42%;
+  }
+  .blogBoxLeft .blogText h4 {
+    font-size: 1.5rem;
+  }
+  .blogRight {
+    border: none;
+    padding: 7.5% 7.5% 0% 7.5%;
+    width: 100%;
+  }
+  .blogRight .blogImageRight {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    float: right;
+    margin: 0%;
+    padding: 0% 0% 2.5% 2.5%;
+    width: 60%;
+  }
+  .blogRight .blogImageRight img {
+    -webkit-box-shadow: 15px 15px #08FDED;
+            box-shadow: 15px 15px #08FDED;
+  }
+  .blogRight .blogText {
+    border-bottom: 5px solid #08FDED;
+    padding: 0% 0% 2.5% 0%;
+  }
+  .comments .commentsContent {
+    padding: 0% 7.5%;
+    width: 100%;
+  }
+  .comments .commentsContent .commentUser {
+    margin-bottom: 5%;
+  }
+}
+
 .copyRight {
   background: #044779;
   text-align: center;

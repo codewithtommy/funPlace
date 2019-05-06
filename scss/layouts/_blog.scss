@@ -111,3 +111,67 @@
     font-weight: 100;
   }
 }
+
+@include laptop {
+
+  .blog {
+    flex-direction: column;
+
+    .blogLeft {
+      display: flex;
+      margin: 0%;
+      padding: 7.5% 7.5% 5% 7.5%;
+      width: 100%;
+
+      .blogImageLeft {
+        box-shadow: -15px -15px $aqua;
+        // border: 5.5px solid $frchblue;
+        margin: 0%;
+      }
+    }
+  }
+
+  .blogBoxLeft {
+    padding: 0% 7.5%;
+
+    .blogText {
+      padding-right: 42%;
+    }
+
+    .blogText h4 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .blogRight {
+    border: none;
+    padding: 7.5% 7.5% 0% 7.5%;
+    width: 100%;
+
+    .blogImageRight {
+      box-shadow: none;
+      float: right;
+      margin: 0%;
+      padding: 0% 0% 2.5% 2.5%;
+      width: 60%;
+
+      img {
+        box-shadow: 15px 15px $aqua;
+      }
+    }
+
+    .blogText  {
+      border-bottom: 5px solid $aqua;
+      padding: 0% 0% 2.5% 0%;
+    }
+  }
+
+  .comments .commentsContent {
+    padding: 0% 7.5%;
+    width: 100%;
+
+    .commentUser {
+      margin-bottom: 5%;
+    }
+  }
+}
