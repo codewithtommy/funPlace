@@ -331,6 +331,12 @@ button a {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .heroLeft h1 {
+    font-size: 4.5rem;
+  }
+}
+
 .about {
   background: #03697C;
 }
