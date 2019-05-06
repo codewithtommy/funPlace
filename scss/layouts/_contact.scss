@@ -40,7 +40,8 @@
       @include flexCent (center, flex, column, center);
 
       .contactIcons {
-        @include flexCent (null, flex, space-evenly, null);
+        @include flexCent (null, flex, null, null);
+        justify-content: space-around;
         margin-bottom: 2.5%;
         width: 45%;
       }
