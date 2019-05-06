@@ -42,6 +42,10 @@ html {
   @include fontProp ($prim, 125%, null);
 }
 
+body {
+  letter-spacing: 1px;
+}
+
 .wrapper {
   display: block;
   max-width: 100%;
@@ -68,7 +72,7 @@ h1 {
 }
 
 h2 {
-  @include fontProp ($sec, 1.7rem, $bold);
+  @include fontProp ($sec, 2.2rem, $bold);
 }
 
 h2,
@@ -85,7 +89,7 @@ h4 {
 }
 
 p {
-  @include fontProp (null, .9rem, null);
+  @include fontProp (null, 0.78rem, null);
   line-height: 25px;
 }
 
