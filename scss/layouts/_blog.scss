@@ -161,17 +161,33 @@
     }
 
     .blogText  {
-      border-bottom: 5px solid $aqua;
+      // border-bottom: 1px solid $aqua;
       padding: 0% 0% 2.5% 0%;
     }
   }
 
-  .comments .commentsContent {
-    padding: 0% 7.5%;
-    width: 100%;
+  .comments {
+    background: $frchblue;
 
-    .commentUser {
-      margin-bottom: 5%;
+    .commentsContent {
+      padding: 0% 7.5%;
+      width: 100%;
+
+      .commentUser {
+        margin-bottom: 5%;
+      }
+
+      .userContainer img {
+        box-shadow: 5px -5px $aqua;
+      }
+    }
+  }
+
+  .commentForm {
+    width: 50%;
+
+    fieldset {
+      padding-left: 0%;
     }
   }
 }

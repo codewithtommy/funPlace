@@ -501,8 +501,10 @@ fieldset input[type="submit"] {
             box-shadow: 15px 15px #08FDED;
   }
   .blogRight .blogText {
-    border-bottom: 5px solid #08FDED;
     padding: 0% 0% 2.5% 0%;
+  }
+  .comments {
+    background: #474BB5;
   }
   .comments .commentsContent {
     padding: 0% 7.5%;
@@ -510,6 +512,16 @@ fieldset input[type="submit"] {
   }
   .comments .commentsContent .commentUser {
     margin-bottom: 5%;
+  }
+  .comments .commentsContent .userContainer img {
+    -webkit-box-shadow: 5px -5px #08FDED;
+            box-shadow: 5px -5px #08FDED;
+  }
+  .commentForm {
+    width: 50%;
+  }
+  .commentForm fieldset {
+    padding-left: 0%;
   }
 }
 
