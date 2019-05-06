@@ -3,3 +3,9 @@
   background-size: cover;
   height: 80vh;
 }
+
+@include laptop {
+  .heroContact {
+    height: 100vh;
+  }
+}

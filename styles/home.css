@@ -17,6 +17,7 @@ body {
 
 img {
   display: block;
+  height: auto;
   max-width: 100%;
   width: 100%;
 }
@@ -322,9 +323,9 @@ button a {
     padding: 0%;
   }
   .heroRight img {
-    -webkit-box-shadow: 15px 15px #474BB5;
-            box-shadow: 15px 15px #474BB5;
-    border: 2.5px solid #08FDED;
+    -webkit-box-shadow: 15px 15px #08FDED;
+            box-shadow: 15px 15px #08FDED;
+    border: 2.5px solid #474BB5;
     position: relative;
     top: 20%;
   }
