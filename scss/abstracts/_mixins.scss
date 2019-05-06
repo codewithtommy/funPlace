@@ -58,3 +58,10 @@
   bottom: $bot;
   left: $lef;
 }
+
+@mixin flexCent ($aliItems, $display, $flexdire, $textCent){
+  align-items: $aliItems;
+  display: $display;
+  flex-direction: $flexDire;
+  text-align: $textCent;
+}

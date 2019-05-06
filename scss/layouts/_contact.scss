@@ -26,9 +26,9 @@
 }
 
 @include laptop {
+  
   .contactContent {
-    align-items: center;
-    flex-direction: column-reverse;
+    @include flexCent (center, null, column-reverse, null);
 
     .contactLeft,
     .contactRight {
@@ -37,14 +37,10 @@
     }
 
     .contactLeft {
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      text-align: center;
+      @include flexCent (center, flex, column, center);
 
       .contactIcons {
-        display: flex;
-        justify-content: space-evenly;
+        @include flexCent (null, flex, space-evenly, null);
         margin-bottom: 2.5%;
         width: 45%;
       }
