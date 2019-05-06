@@ -300,6 +300,36 @@ button a {
   top: 18%;
 }
 
+@media only screen and (max-width: 1215px) {
+  .hero {
+    height: 100vh;
+  }
+  .heroContainer .heroLeft {
+    left: 25%;
+    padding: 0%;
+    position: relative;
+    text-align: center;
+    z-index: 100;
+  }
+  .heroContainer .heroLeft h1 {
+    letter-spacing: 5px;
+    position: relative;
+    text-shadow: 5px 5px #474BB5;
+    top: 40%;
+  }
+  .heroRight {
+    right: 25%;
+    padding: 0%;
+  }
+  .heroRight img {
+    -webkit-box-shadow: 15px 15px #474BB5;
+            box-shadow: 15px 15px #474BB5;
+    border: 2.5px solid #08FDED;
+    position: relative;
+    top: 20%;
+  }
+}
+
 .about {
   background: #03697C;
 }

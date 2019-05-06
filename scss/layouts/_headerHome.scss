@@ -25,3 +25,43 @@
     }
   }
 }
+
+  @include laptop {
+    .hero {
+      height: 100vh;
+    }
+
+    .heroContainer {
+      // NOTE: Do not delete .heroContainer
+      // or it will collapse this responsive layout.
+
+      .heroLeft {
+        left: 25%;
+        padding: 0%;
+        position: relative;
+        text-align: center;
+        z-index: 100;
+
+        h1 {
+          letter-spacing: 5px;
+          position: relative;
+          text-shadow: 5px 5px $frchblue;
+          top: 40%;
+        }
+      }
+    }
+
+    .heroRight {
+      // NOTE: Do not delete .heroContainer
+      // or it will collapse this responsive layout.
+      right: 25%;
+      padding: 0%;
+
+      img {
+        box-shadow: 15px 15px $frchblue;
+        border: 2.5px solid $aqua;
+        position: relative;
+        top: 20%;
+      }
+    }
+  }
