@@ -10,7 +10,6 @@ ul {
     a {
       color: $white;
       @include fontProp (null, 0.78rem, $bold);
-      text-decoration: none;
     }
   }
 }

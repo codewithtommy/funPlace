@@ -17,6 +17,10 @@ img {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 i {
   font-size: 1.2rem;
 }
@@ -30,13 +34,16 @@ h2 {
   font-family: "Walter Turncoat", cursive;
   font-size: 1.7rem;
   font-weight: 700;
+}
+
+h2,
+h3 {
   margin: 0%;
 }
 
 h3 {
   font-family: "Walter Turncoat", cursive;
   font-size: 2.5rem;
-  margin: 0%;
 }
 
 h4 {
@@ -46,6 +53,7 @@ h4 {
 
 p {
   font-size: 0.9rem;
+  line-height: 25px;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
@@ -244,7 +252,18 @@ ul li a {
   color: #FFFFFF;
   font-size: 0.78rem;
   font-weight: 700;
-  text-decoration: none;
+}
+
+button {
+  background: #08FDED;
+  border: none;
+  font-family: "Walter Turncoat", cursive;
+  font-weight: 300;
+  padding: 1% 2%;
+}
+
+button a {
+  color: #474BB5;
 }
 
 .hero {

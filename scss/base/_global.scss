@@ -55,6 +55,10 @@ img {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 i {
   @include fontProp (null, 1.2rem, null);
 }
@@ -65,12 +69,15 @@ h1 {
 
 h2 {
   @include fontProp ($sec, 1.7rem, $bold);
+}
+
+h2,
+h3 {
   margin: 0%;
 }
 
 h3 {
   @include fontProp ($sec, 2.5rem, null);
-  margin: 0%;
 }
 
 h4 {
@@ -79,6 +86,7 @@ h4 {
 
 p {
   @include fontProp (null, .9rem, null);
+  line-height: 25px;
 }
 
 

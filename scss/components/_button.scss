@@ -1,0 +1,10 @@
+button {
+  background: $aqua;
+  border: none;
+  @include fontProp ($sec, null, $light);
+  padding: 1% 2%;
+
+  a {
+    color: $frchblue;
+  }
+}
