@@ -21,7 +21,7 @@
 
     img {
       position: relative;
-      top: 18%;
+      top: 10%;
     }
   }
 }
@@ -46,25 +46,24 @@
         z-index: 100;
 
         h1 {
+          font-size: 5rem;
           letter-spacing: 5px;
           position: relative;
           text-shadow: 5px 5px $frchblue;
-          top: 40%;
+          top: 45%;
         }
       }
-    }
 
-    .heroRight {
+      .heroRight {
       // NOTE: Do not delete .heroContainer
       // or it will collapse this responsive layout.
       right: 25%;
       padding: 0%;
 
-      img {
-        box-shadow: 15px 15px $aqua;
-        border: 2.5px solid $frchblue;
-        position: relative;
-        top: 20%;
+        img {
+          position: relative;
+          top: 25%;
+        }
       }
     }
   }
@@ -74,21 +73,35 @@
   @include laptopSmall {
 
     .heroContainer .heroLeft h1 {
-      font-size: 4.5rem;
-      top: 60%;
+      font-size: 3.5rem;
+      top: 30%;
     }
 
     .heroContainer .heroRight img {
-      top: 38%;
+      position: static !important;
+      margin-top: 10%;
     }
   }
 
   // MEDIA: TABLET (MAX-WIDTH: 767px)
 
   @include tablet {
-    
-    .heroContainer .heroLeft h1 {
-      font-size: 3rem;
-      top: 65%;
+    .heroContainer {
+      flex-direction: column;
+
+      .heroLeft h1 {
+        font-size: 3rem;
+        top: 40%;
+      }
+
+      .heroRight {
+        left: 25%;
+        bottom: 25%;
+      }
+
+      .heroRight img {
+        left: 25%;
+        margin-top: 25%;
+      }
     }
   }

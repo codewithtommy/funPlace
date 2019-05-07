@@ -54,11 +54,46 @@
 }
 
 @include tablet {
-  .infoLeft .infoTextLeft p {
-    padding-left: 5%;
-  }
+  .information {
+    flex-direction: column;
 
-  .infoRight .infoTextRight p {
-    padding-right: 5%;
+    .infoLeft {
+      padding: 7.5% 7.5% 0% 7.5%;
+    }
+
+    .infoTextLeft {
+      margin-top: 5%;
+      padding-bottom: 5%;
+
+      h2,
+      p {
+        padding-left: 0%;
+        text-align: left;
+      }
+    }
+
+    .infoRight {
+      display: flex;
+      flex-direction: column;
+      padding: 0% 7.5% 7.5% 7.5%;
+    }
+
+    .infoTextRight {
+      margin-top: 5%;
+      padding-bottom: 0%;
+
+      p {
+        padding-right: 0%;
+      }
+
+      .buttonWrapper {
+        text-align: right;
+      }
+    }
+
+    .infoImageLeft,
+    .infoImageRight {
+      position: static !important;
+    }
   }
 }

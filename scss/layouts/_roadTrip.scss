@@ -21,3 +21,9 @@
 //   background-size: contain;
 //   height: 50vh;
 // }
+
+@include tablet {
+  .roadTripText p {
+    padding: 0%
+  }
+}
