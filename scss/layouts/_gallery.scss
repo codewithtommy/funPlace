@@ -14,3 +14,31 @@
     }
   }
 }
+
+  // MEDIA: MOBILE LARGE (MAX-WIDTH: 425px)
+
+  @include mobileLarge {
+    .gallery .wrapper {
+      padding: 5% 2.5%;
+
+      .galleryContent {
+        flex-direction: column;
+
+        .galleryImage.one {
+          margin-right: 0%;
+        }
+
+        .galleryImage.three {
+          margin-left: 0%;
+        }
+
+        .galleryImage.one,
+        .galleryImage.two {
+          margin-bottom: 5%;
+        }
+      }
+    }
+  }
+
+
+

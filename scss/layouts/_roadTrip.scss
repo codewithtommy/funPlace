@@ -22,8 +22,22 @@
 //   height: 50vh;
 // }
 
+  // MEDIA: TABLET (MAX-WIDTH: 767px)
+
 @include tablet {
   .roadTripText p {
     padding: 0%
+  }
+}
+
+  // MEDIA: MOBILE LARGE (MAX-WIDTH: 425px)
+
+@include mobileLarge {
+  .roadTrip .wrapper {
+    padding: 5% 2.5%;
+  }
+
+  .roadTrip p {
+    text-align: left;
   }
 }

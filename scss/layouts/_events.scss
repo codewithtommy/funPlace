@@ -41,3 +41,19 @@
       }
     }
   }
+
+  // MEDIA: MOBILE LARGE (MAX-WIDTH: 425px)
+
+  @include mobileLarge {
+    .events .wrapper {
+      padding: 5% 2.5%;
+    }
+
+    .eventsContent .eventsImage {
+      padding: 0% 10% 5%;
+    }
+
+    .eventsText h2 {
+      text-align: center;
+    }
+  }

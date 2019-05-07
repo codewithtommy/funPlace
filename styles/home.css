@@ -597,6 +597,15 @@ button a {
   }
 }
 
+@media only screen and (max-width: 425px) {
+  .roadTrip .wrapper {
+    padding: 5% 2.5%;
+  }
+  .roadTrip p {
+    text-align: left;
+  }
+}
+
 .events {
   background: #03697C;
   padding: 7.5% 0%;
@@ -642,6 +651,18 @@ button a {
   }
 }
 
+@media only screen and (max-width: 425px) {
+  .events .wrapper {
+    padding: 5% 2.5%;
+  }
+  .eventsContent .eventsImage {
+    padding: 0% 10% 5%;
+  }
+  .eventsText h2 {
+    text-align: center;
+  }
+}
+
 .gallery {
   background: #474BB5;
   padding: 7.5% 0%;
@@ -659,6 +680,28 @@ button a {
 
 .gallery .galleryContent .galleryImage.three {
   margin-left: 3%;
+}
+
+@media only screen and (max-width: 425px) {
+  .gallery .wrapper {
+    padding: 5% 2.5%;
+  }
+  .gallery .wrapper .galleryContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .gallery .wrapper .galleryContent .galleryImage.one {
+    margin-right: 0%;
+  }
+  .gallery .wrapper .galleryContent .galleryImage.three {
+    margin-left: 0%;
+  }
+  .gallery .wrapper .galleryContent .galleryImage.one,
+  .gallery .wrapper .galleryContent .galleryImage.two {
+    margin-bottom: 5%;
+  }
 }
 
 .copyRight {
