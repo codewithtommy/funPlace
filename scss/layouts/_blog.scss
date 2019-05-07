@@ -112,6 +112,8 @@
   }
 }
 
+  // MEDIA LAPTOP (MAX-WIDTH 1215px)
+
 @include laptop {
   .blog {
     flex-direction: column;
@@ -123,7 +125,6 @@
       width: 100%;
 
       .blogImageLeft {
-        // border: 5.5px solid $frchblue;
         margin: 0%;
       }
 
@@ -135,10 +136,6 @@
 
   .blogBoxLeft {
     padding: 0% 7.5%;
-
-    // .blogText {
-    //   padding-right: 42%;
-    // }
 
     .blogText h4 {
       font-size: 1.5rem;
@@ -163,7 +160,6 @@
     }
 
     .blogText  {
-      // border-bottom: 1px solid $aqua;
       padding: 0% 0% 2.5% 0%;
     }
   }
@@ -186,10 +182,113 @@
   }
 
   .commentForm {
-    width: 50%;
+    width: 75%;
 
     fieldset {
       padding-left: 0%;
     }
   }
 }
+
+  // MEDIA TABLET (MAX-WIDTH 767px)
+
+  @include tablet {
+    .blog {
+
+      .blogLeft {
+      flex-direction: column;
+
+        .blogImageLeft {
+          padding: 0% 15%;
+          width: 100%;
+        }
+      }
+
+      .blogBoxLeft {
+      margin-top: 7.5%;
+
+      .blogText {
+        text-align: center;
+
+        ul {
+          align-items: center;
+          padding-top: 2.5%;
+        }
+      }
+    }
+
+      .blogRight {
+
+        h3 {
+          text-align: center;
+        }
+
+        .blogImageRight {
+          float: none;
+          width: 100%;
+        }
+      }
+    }
+
+    .commentUser {
+
+      .userContainer {
+        width: 15%;
+      }
+
+      .blogText {
+        padding-left: 5%;
+      }
+    }
+  }
+
+   // MEDIA MOBILE LARGE (MAX-WIDTH 425px)
+
+  @include mobileLarge {
+    .blog .blogLeft .blogImageLeft {
+      padding: 0%;
+    }
+
+    .comments .commentsContent h3 {
+      margin: 5% 0%;
+    }
+
+    .commentForm {
+      width: 100%;
+    }
+  }
+
+     // MEDIA MOBILE SMALL (MAX-WIDTH 320px)
+
+  @include mobileSmall {
+    .blog {
+
+      .blogLeft {
+        padding: 7.5% 2.5%;
+
+        .blogBoxLeft {
+          padding: 0%;
+        }
+      }
+
+      .blogRight {
+        padding: 7.5% 2.5%;
+
+        .blogImageRight {
+          padding: 0%;
+        }
+
+        .blogText h3 {
+          padding-top: 5%;
+        }
+      }
+
+      .commentsContent {
+        padding: 0% 2.5%;
+
+        h3 {
+          text-align: center
+        }
+      }
+    }
+  }

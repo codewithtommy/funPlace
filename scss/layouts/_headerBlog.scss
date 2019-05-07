@@ -3,3 +3,11 @@
   background-size: cover;
   height: 80vh;
 }
+
+  // MEDIA MOBILE LARGE (MAX-WIDTH 425px)
+
+  @include laptop {
+    .heroBlogLeft h1 {
+      text-align: center;
+    }
+  }
