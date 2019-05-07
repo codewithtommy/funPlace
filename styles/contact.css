@@ -324,6 +324,20 @@ fieldset input[type="submit"] {
   width: 100%;
 }
 
+@media only screen and (max-width: 767px) {
+  form fieldset:first-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  form fieldset:first-child input[type="fullName"],
+  form fieldset:first-child input[type="emailAddress"] {
+    padding-left: 1.5%;
+    width: 100%;
+  }
+}
+
 .heroContact {
   background: url(../images/contactHeader.jpg) no-repeat;
   background-size: cover;
@@ -339,8 +353,17 @@ fieldset input[type="submit"] {
   }
 }
 
+@media only screen and (max-width: 425px) {
+  .heroLeft h1 {
+    font-size: 4.5rem;
+  }
+}
+
 .getInContact {
   background: #03697C;
+}
+
+.getInContact .wrapper {
   padding-top: 7.5%;
 }
 
@@ -407,6 +430,30 @@ fieldset input[type="submit"] {
   }
   .contactContent .contactRight {
     position: static !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .contactContent .contactRight {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .contactContent .contactRight {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .getInContact .wrapper {
+    padding: 7.5% 2.5%;
+  }
+  .contactContent .contactLeft {
+    margin: 5% 0%;
+  }
+  .contactContent .contactLeft .contactIcons {
+    width: 100%;
   }
 }
 

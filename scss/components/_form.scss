@@ -44,3 +44,16 @@ fieldset {
   }
 }
 
+  // MEDIA: TABLET (MAX-WIDTH: 767px)
+
+  @include tablet {
+    form fieldset:first-child {
+      flex-direction: column;
+
+      input[type="fullName"],
+      input[type="emailAddress"] {
+        padding-left: 1.5%;
+        width: 100%;
+      }
+    }
+  }

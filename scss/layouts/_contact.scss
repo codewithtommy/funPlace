@@ -1,6 +1,9 @@
 .getInContact {
   background: $darkturq;
-  padding-top: 7.5%;
+
+  .wrapper {
+    padding-top: 7.5%;
+  }
 }
 
 .contactContent {
@@ -24,6 +27,8 @@
     margin: 5% 0%;
   }
 }
+
+  // MEDIA: LAPTOP (MAX-WIDTH: 1215px)
 
 @include laptop {
   .contactContent {
@@ -51,3 +56,35 @@
     }
   }
 }
+
+  // MEDIA: TABLET (MAX-WIDTH: 1024px)
+
+  @include laptopSmall {
+    .contactContent .contactRight {
+      width: 85%;
+    }
+  }
+
+  // MEDIA: TABLET (MAX-WIDTH: 767px)
+
+  @include tablet {
+    .contactContent .contactRight {
+      width: 100%;
+    }
+  }
+
+  // MEDIA MOBILE LARGE (MAX-WIDTH 425px)
+
+  @include mobileLarge {
+    .getInContact .wrapper {
+      padding: 7.5% 2.5%;
+    }
+
+    .contactContent .contactLeft {
+      margin: 5% 0%;
+
+      .contactIcons {
+        width: 100%;
+      }
+    }
+  }

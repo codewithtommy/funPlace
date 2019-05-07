@@ -13,3 +13,11 @@
     text-align: center;
   }
 }
+
+  // MEDIA MOBILE LARGE (MAX-WIDTH 425px)
+
+  @include mobileLarge {
+    .heroLeft h1 {
+      font-size: 4.5rem;
+    }
+  }
