@@ -291,4 +291,20 @@
         }
       }
     }
+
+    .commentUser {
+      display: flex;
+      flex-direction: column;
+
+      .userContainer {
+        margin-bottom: 7.5%;
+        padding: 0% 35%;
+        width: 100%;
+      }
+
+      .blogText {
+        padding: 0%;
+        width: 100%;
+      }
+    }
   }
