@@ -19,3 +19,25 @@
     width: 70%;
   }
 }
+
+  // MEDIA: TABLET (MAX-WIDTH: 767px)
+
+  @include tablet {
+    .eventsContent {
+      flex-direction: column;
+
+      .eventsImage {
+        padding: 0% 20% 7.5%;
+        width: 100%;
+      }
+
+      .eventsText {
+        margin-left: 0%;
+        width: 100%;
+
+        .buttonWrapper {
+          text-align: right;
+        }
+      }
+    }
+  }

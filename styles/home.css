@@ -599,6 +599,26 @@ button a {
   width: 70%;
 }
 
+@media only screen and (max-width: 767px) {
+  .eventsContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .eventsContent .eventsImage {
+    padding: 0% 20% 7.5%;
+    width: 100%;
+  }
+  .eventsContent .eventsText {
+    margin-left: 0%;
+    width: 100%;
+  }
+  .eventsContent .eventsText .buttonWrapper {
+    text-align: right;
+  }
+}
+
 .gallery {
   background: #474BB5;
   padding: 7.5% 0%;
