@@ -90,3 +90,13 @@
     width: 13%;
   }
 }
+
+  // MEDIA: MOBILE SMALL (MAX-WIDTH: 320px)
+
+  @include mobileSmall {
+    .aboutContent .aboutIcons {
+      align-items: center;
+      display: flex;
+      width: 18%;
+    }
+  }

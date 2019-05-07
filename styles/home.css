@@ -455,6 +455,18 @@ button a {
   }
 }
 
+@media only screen and (max-width: 320px) {
+  .aboutContent .aboutIcons {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 18%;
+  }
+}
+
 .information {
   background: #474BB5;
   display: -webkit-box;
@@ -538,6 +550,10 @@ button a {
     padding-left: 0%;
     text-align: left;
   }
+  .information .infoTextLeft .buttonWrapper {
+    padding-left: 0%;
+    text-align: center;
+  }
   .information .infoRight {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -556,7 +572,7 @@ button a {
     padding-right: 0%;
   }
   .information .infoTextRight .buttonWrapper {
-    text-align: right;
+    text-align: center;
   }
   .information .infoImageLeft,
   .information .infoImageRight {
@@ -658,8 +674,17 @@ button a {
   .eventsContent .eventsImage {
     padding: 0% 10% 5%;
   }
-  .eventsText h2 {
+  .eventsContent .eventsText h2 {
     text-align: center;
+  }
+  .eventsContent .eventsText .buttonWrapper {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .eventsContent .eventsImage {
+    padding: 0% 0% 5% 0%;
   }
 }
 
