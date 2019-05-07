@@ -14,5 +14,10 @@ ul {
   }
 }
 
-  // MEDIA: MOBILE SMALL (MAX-WIDTH: 320px)
+  // MEDIA: MOBILE LARGE (MAX-WIDTH: 425px)
 
+@include mobileLarge {
+  ul {
+    justify-content: space-between;
+  }
+}
