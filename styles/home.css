@@ -564,6 +564,17 @@ button a {
   }
 }
 
+@media only screen and (max-width: 425px) {
+  .information .infoLeft,
+  .information .infoRight {
+    padding: 7.5% 2.5%;
+  }
+  .infoLeft .infoTextLeft h2,
+  .infoTextRight h2 {
+    text-align: center;
+  }
+}
+
 .roadTrip {
   background: #03697C;
 }

@@ -99,3 +99,17 @@
     }
   }
 }
+
+// MEDIA: MOBILE LARGE (MAX-WIDTH: 425px)
+
+@include mobileLarge {
+  .information .infoLeft,
+  .information .infoRight {
+    padding: 7.5% 2.5%;
+  }
+
+  .infoLeft .infoTextLeft h2,
+  .infoTextRight h2 {
+    text-align: center;
+  }
+}
