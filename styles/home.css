@@ -441,6 +441,18 @@ button a {
   .aboutContent .aboutIcons {
     width: 8%;
   }
+  .aboutContent .aboutText {
+    padding-left: 5%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .about .wrapper {
+    padding: 7.5% 2.5%;
+  }
+  .aboutContent .aboutIcons {
+    width: 13%;
+  }
 }
 
 .information {

@@ -73,4 +73,20 @@
   .aboutContent .aboutIcons {
     width: 8%;
   }
+
+  .aboutContent .aboutText {
+    padding-left: 5%;
+  }
+}
+
+// MEDIA: MOBILE LARGE (MAX-WIDTH: 425px)
+
+@include mobileLarge {
+  .about .wrapper {
+    padding: 7.5% 2.5%;
+  }
+
+  .aboutContent .aboutIcons {
+    width: 13%;
+  }
 }
