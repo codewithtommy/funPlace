@@ -37,10 +37,19 @@
   @include laptop {
     .hero {
       height: 100vh;
+
+      .wrapper {
+        padding: 0%;
+      }
+
+      .topNavi {
+        padding: 0% 7.5%;
+      }
     }
 
     .heroLeft h1 {
       font-size: 4.5rem;
+      text-align: center;
     }
   }
 

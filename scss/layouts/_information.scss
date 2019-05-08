@@ -55,28 +55,43 @@
   margin: 2.5% 0% 5% 0%;
 }
 
-  // MEDIA: TABLET (MAX-WIDTH: 767px)
+  // MEDIA: LAPTOP SMALL (MAX-WIDTH: 1024px)
 
-@include tablet {
-  .information {
+@include laptopSmall {
+  .information .wrapper {
+    display: flex;
     flex-direction: column;
+    padding: 5% 7.5%;
 
-    .infoLeft {
-      padding: 7.5% 7.5% 0% 7.5%;
-    }
+    .infoLeft,
+    .infoRight {
+      padding: 0%;
 
-    .infoTextLeft {
-      margin-top: 5%;
-      padding-bottom: 5%;
+      .infoImageLeft,
+      .infoImageRight {
+        transform: none;
+      }
 
-      h2,
-      p {
-        padding-left: 0%;
+      .infoTextLeft,
+      .infoTextRight {
+        margin-top: 5%;
+        padding-bottom: 5%;
+      }
+
+      .infoTextLeft h2,
+      .infoTextRight h2 {
+        padding: 0%;
+        text-align: center;
+      }
+
+      .infoTextLeft p,
+      .infoTextRight p {
+        padding: 0%;
         text-align: left;
       }
 
       .buttonWrapper {
-        padding-left: 0%;
+        padding: 0%;
         text-align: center;
       }
     }
@@ -84,25 +99,6 @@
     .infoRight {
       display: flex;
       flex-direction: column;
-      padding: 0% 7.5% 7.5% 7.5%;
-    }
-
-    .infoTextRight {
-      margin-top: 5%;
-      padding-bottom: 0%;
-
-      p {
-        padding-right: 0%;
-      }
-
-      .buttonWrapper {
-        text-align: center;
-      }
-    }
-
-    .infoImageLeft,
-    .infoImageRight {
-      position: static !important;
     }
   }
 }

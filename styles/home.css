@@ -312,8 +312,15 @@ button a {
   .hero {
     height: 100vh;
   }
+  .hero .wrapper {
+    padding: 0%;
+  }
+  .hero .topNavi {
+    padding: 0% 7.5%;
+  }
   .heroLeft h1 {
     font-size: 4.5rem;
+    text-align: center;
   }
 }
 
@@ -541,30 +548,8 @@ button a {
   margin: 2.5% 0% 5% 0%;
 }
 
-@media only screen and (max-width: 767px) {
-  .information {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .information .infoLeft {
-    padding: 7.5% 7.5% 0% 7.5%;
-  }
-  .information .infoTextLeft {
-    margin-top: 5%;
-    padding-bottom: 5%;
-  }
-  .information .infoTextLeft h2,
-  .information .infoTextLeft p {
-    padding-left: 0%;
-    text-align: left;
-  }
-  .information .infoTextLeft .buttonWrapper {
-    padding-left: 0%;
-    text-align: center;
-  }
-  .information .infoRight {
+@media only screen and (max-width: 1024px) {
+  .information .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -572,21 +557,53 @@ button a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 0% 7.5% 7.5% 7.5%;
+    padding: 5% 7.5%;
   }
-  .information .infoTextRight {
+  .information .wrapper .infoLeft,
+  .information .wrapper .infoRight {
+    padding: 0%;
+  }
+  .information .wrapper .infoLeft .infoImageLeft,
+  .information .wrapper .infoLeft .infoImageRight,
+  .information .wrapper .infoRight .infoImageLeft,
+  .information .wrapper .infoRight .infoImageRight {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .information .wrapper .infoLeft .infoTextLeft,
+  .information .wrapper .infoLeft .infoTextRight,
+  .information .wrapper .infoRight .infoTextLeft,
+  .information .wrapper .infoRight .infoTextRight {
     margin-top: 5%;
-    padding-bottom: 0%;
+    padding-bottom: 5%;
   }
-  .information .infoTextRight p {
-    padding-right: 0%;
-  }
-  .information .infoTextRight .buttonWrapper {
+  .information .wrapper .infoLeft .infoTextLeft h2,
+  .information .wrapper .infoLeft .infoTextRight h2,
+  .information .wrapper .infoRight .infoTextLeft h2,
+  .information .wrapper .infoRight .infoTextRight h2 {
+    padding: 0%;
     text-align: center;
   }
-  .information .infoImageLeft,
-  .information .infoImageRight {
-    position: static !important;
+  .information .wrapper .infoLeft .infoTextLeft p,
+  .information .wrapper .infoLeft .infoTextRight p,
+  .information .wrapper .infoRight .infoTextLeft p,
+  .information .wrapper .infoRight .infoTextRight p {
+    padding: 0%;
+    text-align: left;
+  }
+  .information .wrapper .infoLeft .buttonWrapper,
+  .information .wrapper .infoRight .buttonWrapper {
+    padding: 0%;
+    text-align: center;
+  }
+  .information .wrapper .infoRight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
