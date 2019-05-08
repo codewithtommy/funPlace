@@ -279,7 +279,7 @@
     }
   }
 
-   // MEDIA MOBILE LARGE (MAX-WIDTH 425px)
+  // MEDIA MOBILE LARGE (MAX-WIDTH 425px)
 
   @include mobileLarge {
     .blog {
@@ -302,17 +302,26 @@
     }
   }
 
-     // MEDIA MOBILE SMALL (MAX-WIDTH 320px)
+  // MEDIA MOBILE SMALL (MAX-WIDTH 320px)
 
   @include mobileSmall {
     .blog .wrapper {
       padding: 0% 2.5%;
 
       .blogLeft {
+        border: none;
         padding: 0% 0% 2.5%;
+      }
 
-        .blogText {
-          padding: 0%;
+      .blogText {
+        padding: 0%;
+
+        h3 {
+          font-size: 2rem;
+        }
+
+        ul {
+          padding: 5% 20%;
         }
       }
 
@@ -320,13 +329,19 @@
         padding-top: 27.5%;
 
         .blogImageRight {
+          margin-bottom: 5%;
           padding: 0%;
         }
       }
+    }
 
-      .comments .commentsContent h3 {
+    .comments {
+
+      .commentsContent h3 {
+        font-size: 2rem;
         margin-top: 2.5%;
       }
+    }
 
     .commentUser {
       display: flex;

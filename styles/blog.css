@@ -341,8 +341,31 @@ fieldset input[type="submit"] {
 
 @media only screen and (max-width: 1215px) {
   .heroBlogLeft h1 {
-    padding-top: 25%;
+    padding-top: 5%;
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .heroBlogLeft h1 {
+    padding-top: 10%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .heroBlogLeft h1 {
+    font-size: 5rem;
+    padding-top: 25%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .heroBlog .wrapper {
+    padding: 0%;
+  }
+  .heroBlogLeft h1 {
+    font-size: 4rem;
+    padding-top: 35%;
   }
 }
 
@@ -642,22 +665,28 @@ fieldset input[type="submit"] {
     padding: 0% 2.5%;
   }
   .blog .wrapper .blogLeft {
+    border: none;
     padding: 0% 0% 2.5%;
   }
-  .blog .wrapper .blogLeft .blogText {
+  .blog .wrapper .blogText {
     padding: 0%;
+  }
+  .blog .wrapper .blogText h3 {
+    font-size: 2rem;
+  }
+  .blog .wrapper .blogText ul {
+    padding: 5% 20%;
   }
   .blog .wrapper .blogRight {
     padding-top: 27.5%;
   }
   .blog .wrapper .blogRight .blogImageRight {
+    margin-bottom: 5%;
     padding: 0%;
   }
-  .blog .wrapper .commentsContent {
-    padding: 0% 2.5%;
-  }
-  .blog .wrapper .commentsContent h3 {
-    text-align: center;
+  .comments .commentsContent h3 {
+    font-size: 2rem;
+    margin-top: 2.5%;
   }
   .commentUser {
     display: -webkit-box;
