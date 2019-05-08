@@ -23,12 +23,13 @@
     margin: 0%;
   }
 
+  // NOTE: CSS below cannot be nested to the CSS above @ line 21.
   .contactText p:first-child {
     margin: 5% 0%;
   }
 }
 
-  // MEDIA: LAPTOP (MAX-WIDTH: 1215px)
+// MEDIA: LAPTOP (MAX-WIDTH: 1215px)
 
 @include laptop {
   .contactContent {
@@ -52,12 +53,14 @@
     }
 
     .contactRight {
+      // NOTE: !important added to position to override/ set static as a priority.
       position: static !important;
+      transform: none;
     }
   }
 }
 
-  // MEDIA: TABLET (MAX-WIDTH: 1024px)
+// MEDIA: TABLET (MAX-WIDTH: 1024px)
 
   @include laptopSmall {
     .contactContent .contactRight {
@@ -65,7 +68,7 @@
     }
   }
 
-  // MEDIA: TABLET (MAX-WIDTH: 767px)
+// MEDIA: TABLET (MAX-WIDTH: 767px)
 
   @include tablet {
     .contactContent .contactRight {
@@ -73,11 +76,14 @@
     }
   }
 
-  // MEDIA MOBILE LARGE (MAX-WIDTH 425px)
+// MEDIA MOBILE LARGE (MAX-WIDTH 425px)
 
   @include mobileLarge {
-    .getInContact .wrapper {
-      padding: 7.5% 2.5%;
+    .getInContact {
+
+      .wrapper {
+        padding: 7.5% 2.5%;
+      }
     }
 
     .contactContent .contactLeft {

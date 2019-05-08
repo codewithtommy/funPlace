@@ -5,22 +5,21 @@
 @import "../abstracts/mixins";
 
 // -----------------------------------
-// BASE (Setup, Typography...)
+// BASE (Global, Setup.)
 // -----------------------------------
 
 @import "../base/global";
 @import "../base/setup";
 
 // -----------------------------------
-// COMPONENTS (Overlay, Navigation)
+// COMPONENTS ( Navigation, button...etc.)
 // -----------------------------------
 
 @import "../components/navigation";
 @import "../components/button";
 
 // -----------------------------------
-// LAYOUTS (Hero, About, Information,
-// Roadtrip, Events, Gallery, Copyright)
+// LAYOUTS (HOME PAGE LAYOUTS)
 // -----------------------------------
 
 @import "../layouts/headerHome";
@@ -30,3 +29,17 @@
 @import "../layouts/events";
 @import "../layouts/gallery";
 @import "../layouts/footerCopyRight";
+
+// -----------------------------------
+// LAYOUTS (CONTACT PAGE LAYOUTS)
+// -----------------------------------
+
+@import "../layouts/headerContact";
+@import "../layouts/contact";
+
+// -----------------------------------
+// LAYOUTS (BLOG PAGE LAYOUTS)
+// -----------------------------------
+
+@import "../layouts/headerBlog";
+@import "../layouts/blog";

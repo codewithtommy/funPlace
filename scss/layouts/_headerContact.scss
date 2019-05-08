@@ -6,18 +6,41 @@
 
 @include laptop {
   .heroContact {
-    height: 100vh;
-  }
 
-  .heroLeft {
-    text-align: center;
+    .wrapper {
+      padding: 0%;
+    }
+    .heroLeft {
+      text-align: center;
+
+      h1 {
+        margin: 0%;
+      }
+    }
   }
 }
 
-  // MEDIA MOBILE LARGE (MAX-WIDTH 425px)
+// MEDIA LAPTOP (MAX-WIDTH 1215px)
+
+  @include laptop {
+    .heroLeft h1 {
+      padding-top: 20%;
+    }
+  }
+
+// MEDIA LAPTOP (MAX-WIDTH 767px)
+
+  @include tablet {
+    .heroLeft h1 {
+      padding-top: 25%;
+    }
+  }
+
+// MEDIA MOBILE LARGE (MAX-WIDTH 425px)
 
   @include mobileLarge {
     .heroLeft h1 {
       font-size: 4.5rem;
+      padding-top: 40%;
     }
   }

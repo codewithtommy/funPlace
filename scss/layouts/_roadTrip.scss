@@ -13,7 +13,7 @@
     padding: 0% 10%;
   }
 }
-
+// -----------------------------------------------
 // NOTE: Option 2: Set a background image on .roadTripImage. It has a cool effect on scroll if applied.
 
 // .roadTripImage {
@@ -21,6 +21,7 @@
 //   background-size: contain;
 //   height: 50vh;
 // }
+// -----------------------------------------------
 
   // MEDIA: TABLET (MAX-WIDTH: 767px)
 
@@ -37,7 +38,7 @@
     padding: 5% 2.5%;
   }
 
-  .roadTrip p {
+  .roadTripText p {
     text-align: left;
   }
 }

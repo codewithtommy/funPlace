@@ -20,7 +20,7 @@
   }
 }
 
-  // MEDIA: TABLET (MAX-WIDTH: 767px)
+// MEDIA: TABLET (MAX-WIDTH: 767px)
 
   @include tablet {
     .eventsContent {
@@ -36,13 +36,13 @@
         width: 100%;
 
         .buttonWrapper {
-          text-align: right;
+          text-align: center;
         }
       }
     }
   }
 
-  // MEDIA: MOBILE LARGE (MAX-WIDTH: 425px)
+// MEDIA: MOBILE LARGE (MAX-WIDTH: 425px)
 
   @include mobileLarge {
     .events .wrapper {
@@ -53,19 +53,16 @@
       padding: 0% 10% 5%;
     }
 
-    .eventsContent {
+    .eventsContent .eventsText h2 {
+      text-align: center;
 
-      .eventsText h2 {
-        text-align: center;
-      }
-
-      .eventsText .buttonWrapper {
+      .buttonWrapper {
         text-align: center;
       }
     }
   }
 
-  // MEDIA: MOBILE SMALL (MAX-WIDTH: 320px)
+// MEDIA: MOBILE SMALL (MAX-WIDTH: 320px)
 
   @include mobileSmall {
     .eventsContent .eventsImage {

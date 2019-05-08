@@ -4,41 +4,41 @@
   height: 100vh;
 }
 
-  // MEDIA LAPTOP (MAX-WIDTH 1215px)
+ // MEDIA LAPTOP (MAX-WIDTH 1215px)
 
   @include laptop {
     .heroBlogLeft h1 {
-      padding-top: 5%;
+      padding-top: 10%;
       text-align: center;
     }
   }
 
-  // MEDIA LAPTOP (MAX-WIDTH 767px)
+// MEDIA LAPTOP SMALL (MAX-WIDTH 1024px)
 
-  @include tablet {
+  @include laptopSmall {
     .heroBlogLeft h1 {
-      padding-top: 10%;
+      padding-top: 15%;
     }
   }
 
-  // MEDIA LAPTOP (MAX-WIDTH 425px)
+// MEDIA LAPTOP (MAX-WIDTH 425px)
 
   @include mobileLarge {
     .heroBlogLeft h1 {
       font-size: 5rem;
-      padding-top: 25%;
+      padding-top: 45%;
     }
   }
 
-  // MEDIA LAPTOP (MAX-WIDTH 320px)
+// MEDIA LAPTOP (MAX-WIDTH 320px)
 
   @include mobileSmall {
     .heroBlog .wrapper {
       padding: 0%;
     }
-    
+
     .heroBlogLeft h1 {
       font-size: 4rem;
-      padding-top: 35%;
+      padding-top: 65%;
     }
   }

@@ -3,7 +3,7 @@
 
   .wrapper {
   display: flex;
-  // NOTE: Unable to set PADDING code to one line...
+  // NOTE: Unable to set PADDING code to one line to make it DRY... Code for some reason doesn't work...
   padding-top: 15%;
   padding-bottom: 7.5%;
   }
@@ -45,6 +45,10 @@
     padding-top: 15%;
     padding-bottom: 10%;
   }
+
+  .aboutContent .aboutIcons {
+    width: 11%;
+  }
 }
 
 // MEDIA: LAPTOP SMALL (MAX-WIDTH: 1024px)
@@ -56,7 +60,7 @@
   }
 
   .aboutContent .aboutIcons {
-    width: 12%;
+    width: 13%;
   }
 }
 
@@ -70,7 +74,7 @@
   }
 
   .aboutContent .aboutIcons {
-    width: 8%;
+    width: 9%;
   }
 
   .aboutContent .aboutText {
@@ -86,16 +90,20 @@
   }
 
   .aboutContent .aboutIcons {
-    width: 13%;
+    width: 15%;
   }
 }
 
-  // MEDIA: MOBILE SMALL (MAX-WIDTH: 320px)
+// MEDIA: MOBILE SMALL (MAX-WIDTH: 320px)
 
   @include mobileSmall {
     .aboutContent .aboutIcons {
       align-items: center;
       display: flex;
-      width: 18%;
+      width: 20%;
+    }
+
+    h2 {
+      font-size: 1.5rem;
     }
   }

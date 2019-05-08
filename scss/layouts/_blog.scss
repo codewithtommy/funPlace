@@ -3,6 +3,7 @@
 
   .wrapper {
     display: flex;
+    // NOTE: Using PADDING-LEFT: 7.5% will create a padding on the right side from the general .wrapper padding styles.
     padding: 0% 0% 0% 7.5%;
   }
 }
@@ -126,7 +127,7 @@
   }
 }
 
-  // MEDIA LAPTOP (MAX-WIDTH 1215px)
+// MEDIA LAPTOP (MAX-WIDTH 1215px)
 
 @include laptop {
   .blog {
@@ -156,6 +157,7 @@
       .blogText {
         padding: 0% 7.5%;
 
+        // NOTE: .missionFirst is given to .blogText & first P tag because child selectors were not working... Double check on this.
         .missionFirst {
           margin-bottom: 10%;
         }
@@ -170,8 +172,7 @@
 
   .blogRight {
     border: none;
-    margin: 0%;
-    padding: 14% 0%;
+    padding: 7.5% 0%;
     width: 100%;
 
     .blogImageRight {
@@ -212,8 +213,9 @@
     }
   }
 
+  // NOTE: Line 216 is not nested in line 194 to not go over SASS nesting level limit.
   .commentForm {
-    width: 75%;
+    width: 100%;
 
     fieldset {
       padding-left: 0%;
@@ -221,7 +223,7 @@
   }
 }
 
-  // MEDIA TABLET (MAX-WIDTH 767px)
+// MEDIA TABLET (MAX-WIDTH 767px)
 
   @include tablet {
     .blog {
@@ -237,6 +239,7 @@
         .blogText {
           text-align: center;
 
+          // NOTE: .missionFirst is given to .blogText & first P tag because child selectors were not working... Double check on this.
           .missionFirst {
             margin-bottom: 5%;
           }
@@ -273,13 +276,9 @@
         padding-left: 5%;
       }
     }
-
-      .commentForm {
-      width: 100%;
-    }
   }
 
-  // MEDIA MOBILE LARGE (MAX-WIDTH 425px)
+// MEDIA MOBILE LARGE (MAX-WIDTH 425px)
 
   @include mobileLarge {
     .blog {
@@ -297,12 +296,15 @@
       }
     }
 
-    .comments .commentsContent h3 {
-      margin-top: 5%;
+    .comments {
+
+      .commentsContent h3 {
+        margin-top: 5%;
+      }
     }
   }
 
-  // MEDIA MOBILE SMALL (MAX-WIDTH 320px)
+// MEDIA MOBILE SMALL (MAX-WIDTH 320px)
 
   @include mobileSmall {
     .blog .wrapper {

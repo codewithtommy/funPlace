@@ -7,6 +7,8 @@
   }
 }
 
+// LEFT SIDE (IMAGE CHILD + TEXT)
+
 .infoLeft {
   padding-right: 10%;
   
@@ -26,6 +28,8 @@
   }
 }
 
+// RIGHT SIDE (TEXT + IMAGE CHILD w TOY)
+
 .infoRight {
   display: flex;
   flex-direction: column-reverse;
@@ -43,6 +47,8 @@
   padding-right: 18%;
   }
 }
+
+// GENERAL STYLES FOR BOTH LEFT/ RIGHT SIDES @ INFORMATION SECTION.
 
 .infoTextLeft,
 .infoTextRight {
