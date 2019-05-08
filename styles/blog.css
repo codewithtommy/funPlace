@@ -9,8 +9,7 @@ body {
 }
 
 .wrapper {
-  display: block;
-  max-width: 100%;
+  max-width: 1600px;
   padding: 0% 7.5%;
   width: 100%;
 }
@@ -32,7 +31,7 @@ i {
 
 h1 {
   font-family: "Walter Turncoat", cursive;
-  font-size: 5.5rem;
+  font-size: 6rem;
 }
 
 h2 {
@@ -267,21 +266,17 @@ ul li a {
   }
 }
 
-.contactContent {
-  position: relative;
-}
-
 .contactRight {
   background: #474BB5;
   -webkit-box-shadow: 15px 15px #08FDED;
           box-shadow: 15px 15px #08FDED;
-  top: -250px;
-  right: -25px;
-  bottom: 0px;
-  left: 0px;
-  padding: 5% 3.5% 3.5%;
-  position: relative;
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
   width: 65%;
+}
+
+form {
+  padding: 10% 5% 5% 5%;
 }
 
 fieldset {
@@ -341,25 +336,32 @@ fieldset input[type="submit"] {
 .heroBlog {
   background: url(../images/blogHeaderjpg.jpg) no-repeat;
   background-size: cover;
-  height: 80vh;
+  height: 100vh;
 }
 
 @media only screen and (max-width: 1215px) {
   .heroBlogLeft h1 {
+    padding-top: 25%;
     text-align: center;
   }
 }
 
 .blog {
   background: #03697C;
+}
+
+.blog .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0% 0% 0% 7.5%;
 }
 
 .blogLeft {
   background: #474BB5;
-  margin: 7.5% 7.5% 25%;
+  margin: 0% 7.5% 32% 0%;
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
   width: 30%;
 }
 
@@ -367,24 +369,25 @@ fieldset input[type="submit"] {
   margin: -5% 5.5% 0% -30%;
 }
 
-.blogBoxLeft {
-  padding: 9%;
+.blogLeft .blogText {
+  padding: 0% 9%;
 }
 
-.blogBoxLeft .blogText h4 {
-  margin: 0%;
+.blogLeft .blogText h4 {
+  margin: 10% 0% 5%;
   text-transform: uppercase;
 }
 
-.blogBoxLeft .blogText ul {
+.blogLeft .blogText ul {
   color: #08FDED;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-top: 0%;
 }
 
-.blogBoxLeft .blogText ul li {
+.blogLeft .blogText ul li {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -393,7 +396,7 @@ fieldset input[type="submit"] {
   list-style: disc;
 }
 
-.blogBoxLeft .blogText ul p {
+.blogLeft .blogText p {
   color: #FFFFFF;
   margin: 0%;
 }
@@ -416,6 +419,9 @@ fieldset input[type="submit"] {
 
 .comments {
   background: #03697C;
+}
+
+.comments .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -423,6 +429,7 @@ fieldset input[type="submit"] {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  padding: 0%;
 }
 
 .comments .commentsContent {
@@ -467,6 +474,10 @@ fieldset input[type="submit"] {
   padding-bottom: 10%;
 }
 
+.commentForm form {
+  padding: 0%;
+}
+
 .commentForm input[type="fullName"],
 .commentForm input[type="emailAddress"],
 .commentForm input[type="message"] {
@@ -484,35 +495,46 @@ fieldset input[type="submit"] {
 
 @media only screen and (max-width: 1215px) {
   .blog {
+    background: #474BB5;
+  }
+  .blog .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 0% 7.5%;
   }
   .blog .blogLeft {
+    border-bottom: 2px solid #08FDED;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin: 0%;
-    padding: 7.5% 7.5% 5% 7.5%;
+    padding: 7.5% 0;
     width: 100%;
   }
   .blog .blogLeft .blogImageLeft {
     margin: 0%;
+    width: 60%;
   }
   .blog .blogLeft .blogImageLeft img {
     -webkit-box-shadow: -15px -15px #08FDED;
             box-shadow: -15px -15px #08FDED;
   }
-  .blogBoxLeft {
+  .blog .blogLeft .blogText {
     padding: 0% 7.5%;
   }
-  .blogBoxLeft .blogText h4 {
+  .blog .blogLeft .blogText .missionFirst {
+    margin-bottom: 10%;
+  }
+  .blog .blogLeft .blogText h4 {
     font-size: 1.5rem;
+    margin-top: 0%;
   }
   .blogRight {
     border: none;
-    padding: 7.5% 7.5% 0% 7.5%;
+    margin: 0%;
+    padding: 14% 0%;
     width: 100%;
   }
   .blogRight .blogImageRight {
@@ -528,14 +550,17 @@ fieldset input[type="submit"] {
             box-shadow: 15px 15px #08FDED;
   }
   .blogRight .blogText {
-    padding: 0% 0% 2.5% 0%;
+    padding: 0%;
   }
   .comments {
-    background: #474BB5;
+    background: #03697C;
   }
   .comments .commentsContent {
     padding: 0% 7.5%;
     width: 100%;
+  }
+  .comments .commentsContent h3 {
+    margin-top: 7.5%;
   }
   .comments .commentsContent .commentUser {
     margin-bottom: 5%;
@@ -560,26 +585,30 @@ fieldset input[type="submit"] {
             flex-direction: column;
   }
   .blog .blogLeft .blogImageLeft {
-    padding: 0% 15%;
+    padding: 0% 20% 5%;
     width: 100%;
   }
-  .blog .blogBoxLeft {
-    margin-top: 7.5%;
-  }
-  .blog .blogBoxLeft .blogText {
+  .blog .blogLeft .blogText {
     text-align: center;
   }
-  .blog .blogBoxLeft .blogText ul {
+  .blog .blogLeft .blogText .missionFirst {
+    margin-bottom: 5%;
+  }
+  .blog .blogLeft .blogText ul {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-top: 2.5%;
+    padding: 0%;
+  }
+  .blog .blogRight {
+    padding: 20% 0% 7.5%;
   }
   .blog .blogRight h3 {
     text-align: center;
   }
   .blog .blogRight .blogImageRight {
-    float: none;
+    display: block;
+    padding: 0% 0% 7.5%;
     width: 100%;
   }
   .commentUser .userContainer {
@@ -588,40 +617,46 @@ fieldset input[type="submit"] {
   .commentUser .blogText {
     padding-left: 5%;
   }
-}
-
-@media only screen and (max-width: 425px) {
-  .blog .blogLeft .blogImageLeft {
-    padding: 0%;
-  }
-  .comments .commentsContent h3 {
-    margin: 5% 0%;
-  }
   .commentForm {
     width: 100%;
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 425px) {
   .blog .blogLeft {
-    padding: 7.5% 2.5%;
+    padding: 0% 0% 5%;
   }
-  .blog .blogLeft .blogBoxLeft {
-    padding: 0%;
+  .blog .blogLeft .blogImageLeft {
+    padding: 0% 0% 5%;
   }
   .blog .blogRight {
-    padding: 7.5% 2.5%;
+    padding: 25% 0% 5%;
   }
-  .blog .blogRight .blogImageRight {
-    padding: 0%;
+  .comments .commentsContent h3 {
+    margin-top: 5%;
   }
-  .blog .blogRight .blogText h3 {
-    padding-top: 5%;
-  }
-  .blog .commentsContent {
+}
+
+@media only screen and (max-width: 320px) {
+  .blog .wrapper {
     padding: 0% 2.5%;
   }
-  .blog .commentsContent h3 {
+  .blog .wrapper .blogLeft {
+    padding: 0% 0% 2.5%;
+  }
+  .blog .wrapper .blogLeft .blogText {
+    padding: 0%;
+  }
+  .blog .wrapper .blogRight {
+    padding-top: 27.5%;
+  }
+  .blog .wrapper .blogRight .blogImageRight {
+    padding: 0%;
+  }
+  .blog .wrapper .commentsContent {
+    padding: 0% 2.5%;
+  }
+  .blog .wrapper .commentsContent h3 {
     text-align: center;
   }
   .commentUser {

@@ -1,14 +1,17 @@
 .information {
   background: $frchblue;
-  display: flex;
+
+  .wrapper {
+    display: flex;
+    padding: 0%;
+  }
 }
 
 .infoLeft {
-  padding-right: 7.5%;
-
+  padding-right: 10%;
+  
   .infoImageLeft {
-  position: relative;
-  top: -5%;
+    transform: translateY(-7.5%);
 
     img {
       box-shadow: 15px 15px $aqua;
@@ -18,7 +21,7 @@
   .infoTextLeft h2,
   .infoTextLeft p,
   .infoTextLeft .buttonWrapper {
-    padding-left: 20%;
+    padding-left: 18%;
     text-align: right;
   }
 }
@@ -26,11 +29,10 @@
 .infoRight {
   display: flex;
   flex-direction: column-reverse;
-  padding-left: 7.5%;
+  padding-left: 10%;
 
   .infoImageRight {
-  position: relative;
-  top: 5%;
+    transform: translateY(7.5%);
 
     img {
       box-shadow: -15px 15px $aqua;
@@ -38,14 +40,14 @@
   }
 
   .infoTextRight p {
-  padding-right: 20%;
+  padding-right: 18%;
   }
 }
 
 .infoTextLeft,
 .infoTextRight {
-  margin-top: 10%;
-  padding-bottom: 10%;
+  margin-top: 15%;
+  padding-bottom: 15%;
 }
 
 .infoTextLeft p,

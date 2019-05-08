@@ -1,31 +1,37 @@
 .blog {
   background: $darkturq;
-  display: flex;
+
+  .wrapper {
+    display: flex;
+    padding: 0% 0% 0% 7.5%;
+  }
 }
 
 .blogLeft {
   background: $frchblue;
-  margin: 7.5% 7.5% 25%;
+  margin: 0% 7.5% 32% 0%;
+  transform: translateY(10%);
   width: 30%;
   
-    .blogImageLeft {
+  .blogImageLeft {
     margin: -5% 5.5% 0% -30%;
   }
-}
 
-.blogBoxLeft {
-  padding: 9%;
+  .blogText {
+    padding: 0% 9%;
 
-  .blogText h4 {
-    margin: 0%;
-    text-transform: uppercase;
-  }
+    h4 {
+      margin: 10% 0% 5%;
+      text-transform: uppercase;
+    }
 
-  .blogText ul {
-    color: $aqua;
-    flex-direction: column;
+    ul {
+      color: $aqua;
+      flex-direction: column;
+      padding-top: 0%;
+    }
 
-    li {
+    ul li {
       flex-direction: column;
       font-size: .9rem;
       list-style: disc;
@@ -55,8 +61,12 @@
 
 .comments {
   background: $darkturq;
-  display: flex;
-  flex-direction: row-reverse;
+  
+  .wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0%;
+  }
   
   .commentsContent {
     padding: 0% 7%;
@@ -96,6 +106,10 @@
 .commentForm {
   padding-bottom: 10%;
 
+  form {
+    padding: 0%;
+  }
+
   input[type="fullName"],
   input[type="emailAddress"],
   input[type="message"] {
@@ -116,35 +130,48 @@
 
 @include laptop {
   .blog {
-    flex-direction: column;
+    background: $frchblue;
+
+    .wrapper {
+      flex-direction: column;
+      padding: 0% 7.5%;
+    }
 
     .blogLeft {
+      border-bottom: 2px solid $aqua;
       display: flex;
       margin: 0%;
-      padding: 7.5% 7.5% 5% 7.5%;
+      padding: 7.5% 0;
       width: 100%;
 
       .blogImageLeft {
         margin: 0%;
+        width: 60%;
+
+        img {
+          box-shadow: -15px -15px $aqua;
+        }
       }
 
-      .blogImageLeft img {
-        box-shadow: -15px -15px $aqua;
+      .blogText {
+        padding: 0% 7.5%;
+
+        .missionFirst {
+          margin-bottom: 10%;
+        }
+
+        h4 {
+          font-size: 1.5rem;
+          margin-top: 0%;
+        }
       }
-    }
-  }
-
-  .blogBoxLeft {
-    padding: 0% 7.5%;
-
-    .blogText h4 {
-      font-size: 1.5rem;
     }
   }
 
   .blogRight {
     border: none;
-    padding: 7.5% 7.5% 0% 7.5%;
+    margin: 0%;
+    padding: 14% 0%;
     width: 100%;
 
     .blogImageRight {
@@ -160,16 +187,20 @@
     }
 
     .blogText  {
-      padding: 0% 0% 2.5% 0%;
+      padding: 0%;
     }
   }
 
   .comments {
-    background: $frchblue;
+    background: $darkturq;
 
     .commentsContent {
       padding: 0% 7.5%;
       width: 100%;
+
+      h3 {
+        margin-top: 7.5%;
+      }
 
       .commentUser {
         margin-bottom: 5%;
@@ -196,35 +227,37 @@
     .blog {
 
       .blogLeft {
-      flex-direction: column;
+        flex-direction: column;
 
         .blogImageLeft {
-          padding: 0% 15%;
+          padding: 0% 20% 5%;
           width: 100%;
         }
-      }
 
-      .blogBoxLeft {
-      margin-top: 7.5%;
+        .blogText {
+          text-align: center;
 
-      .blogText {
-        text-align: center;
+          .missionFirst {
+            margin-bottom: 5%;
+          }
 
-        ul {
-          align-items: center;
-          padding-top: 2.5%;
+          ul {
+            align-items: center;
+            padding: 0%;
+          }
         }
       }
-    }
 
       .blogRight {
+        padding: 20% 0% 7.5%;
 
         h3 {
           text-align: center;
         }
 
         .blogImageRight {
-          float: none;
+          display: block;
+          padding: 0% 0% 7.5%;
           width: 100%;
         }
       }
@@ -240,57 +273,60 @@
         padding-left: 5%;
       }
     }
+
+      .commentForm {
+      width: 100%;
+    }
   }
 
    // MEDIA MOBILE LARGE (MAX-WIDTH 425px)
 
   @include mobileLarge {
-    .blog .blogLeft .blogImageLeft {
-      padding: 0%;
+    .blog {
+      
+      .blogLeft {
+        padding: 0% 0% 5%;
+
+        .blogImageLeft {
+          padding: 0% 0% 5%;
+        }
+      }
+
+      .blogRight {
+        padding: 25% 0% 5%;
+      }
     }
 
     .comments .commentsContent h3 {
-      margin: 5% 0%;
-    }
-
-    .commentForm {
-      width: 100%;
+      margin-top: 5%;
     }
   }
 
      // MEDIA MOBILE SMALL (MAX-WIDTH 320px)
 
   @include mobileSmall {
-    .blog {
+    .blog .wrapper {
+      padding: 0% 2.5%;
 
       .blogLeft {
-        padding: 7.5% 2.5%;
+        padding: 0% 0% 2.5%;
 
-        .blogBoxLeft {
+        .blogText {
           padding: 0%;
         }
       }
 
       .blogRight {
-        padding: 7.5% 2.5%;
+        padding-top: 27.5%;
 
         .blogImageRight {
           padding: 0%;
         }
-
-        .blogText h3 {
-          padding-top: 5%;
-        }
       }
 
-      .commentsContent {
-        padding: 0% 2.5%;
-
-        h3 {
-          text-align: center
-        }
+      .comments .commentsContent h3 {
+        margin-top: 2.5%;
       }
-    }
 
     .commentUser {
       display: flex;

@@ -47,8 +47,7 @@ body {
 }
 
 .wrapper {
-  display: block;
-  max-width: 100%;
+  max-width: 1600px;
   padding: 0% 7.5%;
   width: 100%;
 }
@@ -69,7 +68,7 @@ i {
 }
 
 h1 {
-  @include fontProp ($sec, 5.5rem, null);
+  @include fontProp ($sec, 6rem, null);
 }
 
 h2 {

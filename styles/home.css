@@ -9,8 +9,7 @@ body {
 }
 
 .wrapper {
-  display: block;
-  max-width: 100%;
+  max-width: 1600px;
   padding: 0% 7.5%;
   width: 100%;
 }
@@ -32,7 +31,7 @@ i {
 
 h1 {
   font-family: "Walter Turncoat", cursive;
-  font-size: 5.5rem;
+  font-size: 6rem;
 }
 
 h2 {
@@ -282,7 +281,11 @@ button a {
 .hero {
   background: url(../images/homeHeader.jpg) no-repeat;
   background-size: cover;
-  height: 80vh;
+  height: 100vh;
+}
+
+.hero .wrapper {
+  padding: 0% 0% 0% 7.5%;
 }
 
 .heroContainer {
@@ -297,75 +300,70 @@ button a {
 }
 
 .heroContainer .heroLeft {
-  padding: 11% 0% 0% 7.5%;
-}
-
-.heroContainer .heroRight {
-  position: relative;
+  padding: 15% 0% 0% 0%;
 }
 
 .heroContainer .heroRight img {
-  position: relative;
-  top: 10%;
+  -webkit-transform: translate(0%, 35%);
+          transform: translate(0%, 35%);
 }
 
 @media only screen and (max-width: 1215px) {
   .hero {
     height: 100vh;
   }
-  .heroContainer .heroLeft {
-    left: 25%;
-    padding: 0%;
-    position: relative;
-    text-align: center;
-    z-index: 100;
-  }
-  .heroContainer .heroLeft h1 {
-    font-size: 5rem;
-    letter-spacing: 5px;
-    position: relative;
-    text-shadow: 5px 5px #474BB5;
-    top: 45%;
-  }
-  .heroContainer .heroRight {
-    right: 25%;
-    padding: 0%;
-  }
-  .heroContainer .heroRight img {
-    position: relative;
-    top: 25%;
+  .heroLeft h1 {
+    font-size: 4.5rem;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  .heroContainer .heroLeft h1 {
-    font-size: 3.5rem;
-    top: 30%;
-  }
-  .heroContainer .heroRight img {
-    position: static !important;
-    margin-top: 10%;
-  }
-}
-
-@media only screen and (max-width: 767px) {
   .heroContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .heroContainer .heroLeft {
+    padding: 2.5% 0% 0%;
+    text-align: center;
+    width: 100%;
+  }
   .heroContainer .heroLeft h1 {
-    font-size: 3rem;
-    top: 40%;
+    font-size: 4rem;
+    margin: 0%;
   }
   .heroContainer .heroRight {
-    left: 25%;
-    bottom: 25%;
+    padding: 0% 29.5%;
+    width: 100%;
   }
   .heroContainer .heroRight img {
-    left: 25%;
-    margin-top: 25%;
+    position: static !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .heroContainer .heroLeft {
+    padding-top: 5%;
+  }
+  .heroContainer .heroRight {
+    padding: 0% 22.5%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .heroContainer .heroLeft h1 {
+    font-size: 3.25rem;
+    padding-top: 20%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .heroContainer .heroLeft h1 {
+    padding-top: 60%;
+  }
+  .heroContainer .heroRight img {
+    display: none;
   }
 }
 
@@ -377,7 +375,7 @@ button a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 21%;
+  padding-top: 15%;
   padding-bottom: 7.5%;
 }
 
@@ -389,7 +387,7 @@ button a {
 }
 
 .aboutContent .aboutIcons {
-  width: 10%;
+  width: 9%;
 }
 
 .aboutContent .aboutIcons i {
@@ -477,18 +475,22 @@ button a {
 
 .information {
   background: #474BB5;
+}
+
+.information .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0%;
 }
 
 .infoLeft {
-  padding-right: 7.5%;
+  padding-right: 10%;
 }
 
 .infoLeft .infoImageLeft {
-  position: relative;
-  top: -5%;
+  -webkit-transform: translateY(-7.5%);
+          transform: translateY(-7.5%);
 }
 
 .infoLeft .infoImageLeft img {
@@ -499,7 +501,7 @@ button a {
 .infoLeft .infoTextLeft h2,
 .infoLeft .infoTextLeft p,
 .infoLeft .infoTextLeft .buttonWrapper {
-  padding-left: 20%;
+  padding-left: 18%;
   text-align: right;
 }
 
@@ -511,12 +513,12 @@ button a {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
-  padding-left: 7.5%;
+  padding-left: 10%;
 }
 
 .infoRight .infoImageRight {
-  position: relative;
-  top: 5%;
+  -webkit-transform: translateY(7.5%);
+          transform: translateY(7.5%);
 }
 
 .infoRight .infoImageRight img {
@@ -525,13 +527,13 @@ button a {
 }
 
 .infoRight .infoTextRight p {
-  padding-right: 20%;
+  padding-right: 18%;
 }
 
 .infoTextLeft,
 .infoTextRight {
-  margin-top: 10%;
-  padding-bottom: 10%;
+  margin-top: 15%;
+  padding-bottom: 15%;
 }
 
 .infoTextLeft p,

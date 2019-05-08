@@ -9,8 +9,7 @@ body {
 }
 
 .wrapper {
-  display: block;
-  max-width: 100%;
+  max-width: 1600px;
   padding: 0% 7.5%;
   width: 100%;
 }
@@ -32,7 +31,7 @@ i {
 
 h1 {
   font-family: "Walter Turncoat", cursive;
-  font-size: 5.5rem;
+  font-size: 6rem;
 }
 
 h2 {
@@ -267,21 +266,17 @@ ul li a {
   }
 }
 
-.contactContent {
-  position: relative;
-}
-
 .contactRight {
   background: #474BB5;
   -webkit-box-shadow: 15px 15px #08FDED;
           box-shadow: 15px 15px #08FDED;
-  top: -250px;
-  right: -25px;
-  bottom: 0px;
-  left: 0px;
-  padding: 5% 3.5% 3.5%;
-  position: relative;
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
   width: 65%;
+}
+
+form {
+  padding: 10% 5% 5% 5%;
 }
 
 fieldset {
@@ -341,7 +336,7 @@ fieldset input[type="submit"] {
 .heroContact {
   background: url(../images/contactHeader.jpg) no-repeat;
   background-size: cover;
-  height: 80vh;
+  height: 100vh;
 }
 
 @media only screen and (max-width: 1215px) {

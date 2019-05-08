@@ -4,8 +4,7 @@
   .wrapper {
   display: flex;
   // NOTE: Unable to set PADDING code to one line...
-  // Padding: 21% 0% 7.5% 0% = layout collapses.
-  padding-top: 21%;
+  padding-top: 15%;
   padding-bottom: 7.5%;
   }
 }
@@ -15,7 +14,7 @@
   padding-bottom: 5%;
 
   .aboutIcons {
-    width: 10%;
+    width: 9%;
 
     i {
       align-items: center;

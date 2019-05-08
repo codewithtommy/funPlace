@@ -1,13 +1,14 @@
 .heroBlog {
   background: url(../images/blogHeaderjpg.jpg)no-repeat;
   background-size: cover;
-  height: 80vh;
+  height: 100vh;
 }
 
   // MEDIA MOBILE LARGE (MAX-WIDTH 425px)
 
   @include laptop {
     .heroBlogLeft h1 {
+      padding-top: 25%;
       text-align: center;
     }
   }
