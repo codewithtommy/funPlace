@@ -282,6 +282,73 @@ button a {
   color: #474BB5;
 }
 
+.contactRight {
+  background: #474BB5;
+  -webkit-box-shadow: 15px 15px #08FDED;
+          box-shadow: 15px 15px #08FDED;
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
+  width: 65%;
+}
+
+form {
+  padding: 10% 5% 5% 5%;
+}
+
+fieldset {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0%;
+}
+
+fieldset input[type="fullName"],
+fieldset input[type="emailAddress"] {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  padding: 2.5%;
+  width: 48%;
+}
+
+fieldset input[type="message"] {
+  background: #474BB5;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  margin-bottom: 2.5%;
+  padding: 2.5% 0% 30% 1.5%;
+  width: 100%;
+}
+
+fieldset input[type="submit"] {
+  background: #08FDED;
+  border: transparent;
+  color: #03697C;
+  font-family: "Walter Turncoat", cursive;
+  font-weight: 700;
+  padding: 1.5%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  form fieldset:first-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  form fieldset:first-child input[type="fullName"],
+  form fieldset:first-child input[type="emailAddress"] {
+    padding-left: 1.5%;
+    width: 100%;
+  }
+}
+
 .hero {
   background: url(../images/homeHeader.jpg) no-repeat;
   background-size: cover;
